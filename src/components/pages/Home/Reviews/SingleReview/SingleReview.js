@@ -5,7 +5,7 @@ const SingleReview = ({ review }) => {
     const { name, img, testimonial, occupation } = review;
 
     return (
-        <div className='mt-5 '>
+        <div className='m-5'>
             <center>
                 <img src={img} alt="" />
             </center>
@@ -13,7 +13,7 @@ const SingleReview = ({ review }) => {
 
             </p>
             <center>
-                <div class="here"></div>
+                <div class="testimonial-line"></div>
             </center>
             <p className='testimonial'>{testimonial}</p>
         </div>
