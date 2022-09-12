@@ -1,0 +1,25 @@
+.navbar-color{
+    background-color: #00A651;
+}
+.cart-icon{
+    font-size: 30px;
+}
+.arrow-icon{
+    font-size: 30px;
+}
+.relative{
+    position: relative;
+}
+.absoulate{
+    position: absolute;
+    left: 74%;
+}
+.logo{
+    width:20%;
+}
+.item{
+    width:70%;
+}
+.image{
+    width: 70%;
+}
