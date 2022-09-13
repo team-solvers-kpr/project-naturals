@@ -9,8 +9,7 @@ const SingleReview = ({ review }) => {
             <center>
                 <img src={img} alt="" />
             </center>
-            <p className='testimonial-name'>{name} <span className='ms-1'>|</span> <span className='ms-2 testimonial-occupation'>{occupation} </span>
-
+            <p className='testimonial-name-occupation' > <span className='testimonial-name'>{name}</span><span className='ms-1'>|</span> <span className='ms-2 '>{occupation} </span>
             </p>
             <center>
                 <div class="testimonial-line"></div>
