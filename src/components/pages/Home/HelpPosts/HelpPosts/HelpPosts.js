@@ -23,7 +23,7 @@ const HelpPosts = () => {
 
     return (
         <>
-            <h2 className='text-center testimonial-title'><span className='testimonial-title-span'>Natural Help</span> Post</h2>
+            <h2 className='text-center testimonial-title'><span className='testimonial-title-span'>Naturals Help</span> Post</h2>
             <div className='container'>
                 <div className='row '>
 

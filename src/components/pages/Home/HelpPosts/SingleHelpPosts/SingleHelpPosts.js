@@ -9,7 +9,7 @@ const SingleHelpPosts = ({ post }) => {
         setFullDescription(!showFullDescription);
     };
 
-    const description = showFullDescription ? postDescription : postDescription.slice(0, 200);
+    const description = showFullDescription ? postDescription : postDescription.slice(0, 120);
 
     return (
         <div className="col-md-6 col-lg-3 mt-4">
