@@ -14,7 +14,7 @@ const Footer = () => {
 London, E16 4BJ, United Kingdom.</p>
 <img src={require('./call.png')} height={100} width={100}/>
 <p>Care Line: +8809609 337 337</p>
-<img src={require('./fb3.png')} height={40} width={40}/>
+<img src={require('./assests/images/fb3.png')} height={40} width={40}/>
 <img src={require('./twiter2.png')} height={40} width={40}/>
 <img src={require('./linkedin2.png')} height={40} width={40}/>
 <img src={require('./instagram2.jpg')} height={40} width={40}/>
