@@ -12,7 +12,7 @@ const SingleReview = ({ review }) => {
             <p className='testimonial-name-occupation' > <span className='testimonial-name'>{name}</span><span className='ms-1'>|</span> <span className='ms-2 '>{occupation} </span>
             </p>
             <center>
-                <div class="testimonial-line"></div>
+                <div className="testimonial-line"></div>
             </center>
             <p className='testimonial'>{testimonial}</p>
         </div>

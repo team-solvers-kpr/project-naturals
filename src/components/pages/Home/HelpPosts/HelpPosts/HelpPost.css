@@ -1,0 +1,11 @@
+.helpLoad-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f7f7f7;
+    background-color: #59a453;
+    font-size: 14px;
+    height: 48px;
+    width: 104px;
+    border: none;
+    border-radius: 5px;
+    margin: 40px;
+}

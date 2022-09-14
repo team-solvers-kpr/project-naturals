@@ -48,8 +48,8 @@ const Reviews = () => {
                     autoPlay
                     autoPlaySpeed={3000}
                     centerMode={false}
-                    containerClass="container-with-dots"
-                    dotListClass=""
+                    containerClassName="container-with-dots"
+                    dotListClassName=""
                     infinite
                     minimumTouchDrag={80}
                     pauseOnHover

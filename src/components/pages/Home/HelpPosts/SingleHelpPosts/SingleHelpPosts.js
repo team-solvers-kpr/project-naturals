@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './SingleHelpPosts.css';
+
 
 const SingleHelpPosts = ({ post }) => {
-    const { postTitle, img, postDescription } = post
-    return (
-        <div className="col-md-6 col-lg-4 mt-4">
-            <img src={img} class="card-img-top" alt="..." />
-            <div class="card" >
-                <div class="card-body">
-                    <h5 class="card-title">{postTitle}</h5>
-                    <p class="card-text">{postDescription}</p>
+    const { postTitle, img, postDescription } = post;
+    const [showFullDescription, setFullDescription] = useState(false);
+    const showFullDescriptionHandler = () => {
+        setFullDescription(!showFullDescription);
+    };
 
+    const description = showFullDescription ? postDescription : postDescription.slice(0, 200);
+
+    return (
+        <div className="col-md-6 col-lg-3 mt-4">
+            <div className="card" >
+                <img src={img} className="card-img-top" alt="postsImage" />
+                <div className="card-body" style={{ backgroundColor: "#f4f4f4" }}>
+                    <h5 className="card-title blog-title">{postTitle}</h5>
+                    <h6 className='blog-post-description'>
+                        {description}
+                        <span className='readMoreLess-btn' onClick={showFullDescriptionHandler}>
+                            {showFullDescription ? "  Show Less" : "  ...Show More"}
+                        </span>
+                    </h6>
+                    <button className='helpPostBtn'>Read More</button>
                 </div>
+
             </div>
 
         </div>

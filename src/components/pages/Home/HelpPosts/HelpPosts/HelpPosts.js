@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import SingleHelpPosts from '../SingleHelpPosts/SingleHelpPosts'
+import './HelpPost.css';
+
+
 const HelpPosts = () => {
     const [posts, setPosts] = useState([]);
-    const [visible, setVisible] = useState(3);
+    const [visible, setVisible] = useState(4);
 
     const showMoreItems = () => {
-        setVisible((prevVisible) => prevVisible + 3);
+        setVisible((prevVisible) => prevVisible + 4);
     };
 
     const showLessItems = () => {
-        setVisible((prevVisible) => prevVisible = 3);
+        setVisible((prevVisible) => prevVisible = 4);
     };
 
     useEffect(() => {
@@ -33,8 +36,8 @@ const HelpPosts = () => {
                     {
                         (posts || []).length > visible && (
 
-                            <div class="col-md-12  text-center">
-                                <button onClick={showMoreItems} class="btn btn-success w-50">Load More</button>
+                            <div className="col-md-12  text-center">
+                                <button onClick={showMoreItems} className="helpLoad-btn">Load More</button>
                             </div>
                         )
 
@@ -42,8 +45,8 @@ const HelpPosts = () => {
                     {
                         (posts || []).length < visible && (
 
-                            <div class="col-md-12 text-center">
-                                <button onClick={showLessItems} class="btn btn-success w-50">Load Less</button>
+                            <div className="col-md-12 text-center">
+                                <button onClick={showLessItems} className="helpLoad-btn">Load Less</button>
                             </div>
                         )
                     }
