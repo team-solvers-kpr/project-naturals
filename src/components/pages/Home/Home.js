@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar/Navbar";
+import HelpPosts from "./HelpPosts/HelpPosts/HelpPosts";
+import Reviews from "./Reviews/Reviews/Reviews";
 
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
+      <Reviews />
+      <HelpPosts />
     </div>
   );
 };

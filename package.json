@@ -9,7 +9,11 @@
     "bootstrap": "^5.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icons": "^4.4.0",
+=======
+    "react-multi-carousel": "^2.8.2",
+>>>>>>> b5ec71d7899da15165b5b3182975d8e6402de5f7
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
