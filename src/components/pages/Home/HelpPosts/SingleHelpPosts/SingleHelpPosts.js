@@ -12,7 +12,13 @@ const SingleHelpPosts = ({ post }) => {
     const description = showFullDescription ? postDescription : postDescription.slice(0, 120);
 
     return (
-        <div className="col-md-6 col-lg-3 mt-4">
+        <div className="col-md-6 col-lg-3 mt-4 mb-4"
+            data-aos="zoom-out-down"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+        >
+
             <div className="card" >
                 <img src={img} className="card-img-top" alt="postsImage" />
                 <div className="card-body" style={{ backgroundColor: "#f4f4f4" }}>

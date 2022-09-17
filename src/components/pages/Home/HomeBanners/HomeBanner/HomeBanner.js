@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HomeBanner = ({ banner }) => {
-    const { img1, img2, img3 } = banner
+    const { img1, img2, img3, img4 } = banner
     console.log(banner)
     return (
         <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
@@ -14,6 +14,9 @@ const HomeBanner = ({ banner }) => {
                 </div>
                 <div class="carousel-item">
                     <img src={img3} class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src={img4} class="d-block w-100" alt="..." />
                 </div>
 
             </div>
