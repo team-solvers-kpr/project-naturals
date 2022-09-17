@@ -10,7 +10,6 @@ const HomeBanners = () => {
             .then(data => setBanners(data))
     }, [])
 
-
     return (
         <div>
             {banners.map(banner => <HomeBanner key={banner.id} banner={banner} />

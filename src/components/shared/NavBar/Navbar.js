@@ -1,8 +1,9 @@
 import React from 'react';
-import navIcon from '../../assets/images/nav/nav.png';
+import navIcon from '../../../assests/nav/nav.png';
 import './Navbar.css';
 import { FiSearch } from "@react-icons/all-files/fi/FiSearch";
 import { IoCartOutline } from "@react-icons/all-files/io5/IoCartOutline";
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -11,19 +12,19 @@ const Navbar = () => {
         <div >
             <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#00a651" }}>
                 <div className="container">
-                    <a className="navbar-brand" href="/">
-                        <img src={navIcon} alt="" width="188" />
-                    </a>
+                    <Link to="/" className="navbar-brand" aria-current="page"><img src={navIcon} alt="" width="188" /></Link>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="/">HOME</a>
+                                <Link to="/" className="nav-link" aria-current="page">HOME</Link>
+
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">PEARL</a>
+                                <Link to="/pearl" className="nav-link" aria-current="page">PEARL</Link>
                             </li>
 
                             <li className="nav-item">
