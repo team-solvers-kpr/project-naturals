@@ -2,12 +2,13 @@
 .footer{
     background-image:url(../../../assets/images/bg.png) ;
     width: 100%;
-    /* background-repeat: no-repeat; */
+     /* background-repeat: no-repeat;  */
     background-position: center ;
     background-repeat: no-repeat ;
     background-size: cover ;
-    
-
+}
+.gap{
+    grid-row-gap: 200px;
 }
 .aboutText{
     text-align: left;

@@ -3,7 +3,7 @@ import Footer from "../../shared/Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div  >
       <h1>Home1</h1>
       <Footer></Footer>
     </div>
