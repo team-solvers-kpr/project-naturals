@@ -1,13 +1,14 @@
 import React from 'react';
 import bottomBanner from "../../../../assests/pearl/banner-2.png";
-import './BottomPearlBanner.css';
+import './PearlBottomBanner.css';
 import icon1 from '../../../../assests/pearl/icon-1.png';
 import icon2 from '../../../../assests/pearl/icon-2.png';
 
 const BottomPearlBanner = () => {
     return (
-        <div>
-            <div style={{ backgroundColor: "black" }}>
+        <div >
+            <div style={{ backgroundColor: "black", marginTop: "50px" }}
+            >
                 <center>
                     <img className='bottomPearlBannerImg' src={bottomBanner} alt="" />
                 </center>

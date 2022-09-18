@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "img": "./assets/images/pearlTabItems/pearltabitem-1.jpg",
+        "name": "Pearl Onion Oil | পার্ল অনিওন অয়েল – 75ml",
+        "size": "75ml",
+        "price": 695,
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "img": "./assets/images/pearlTabItems/pearltabitem-2.jpg",
+        "name": "Pearl Peanut Oil | পার্ল পিনাট ওয়েল – 75ml",
+        "size": "75ml",
+        "price": 255,
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "img": "./assets/images/pearlTabItems/pearltabitem-3.jpg",
+        "name": "Pearl Coconut Oil | পার্ল নারিকেল তেল – 75ml",
+        "size": "75ml",
+        "price": 325,
+        "rating": 4
+    },
+    {
+        "id": 4,
+        "img": "./assets/images/pearlTabItems/pearltabitem-4.jpg",
+        "name": "Pearl Henna Powder | পার্ল হেনা পাউডার",
+        "size": "80 gram",
+        "price": 235,
+        "rating": 4
+    }
+]
