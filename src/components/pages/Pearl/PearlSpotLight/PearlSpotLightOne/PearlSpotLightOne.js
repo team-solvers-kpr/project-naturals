@@ -1,5 +1,5 @@
 import React from 'react';
-import ShopNowButton from '../../../../shared/Button/Button';
+import CustomButton from '../../../../shared/CustomButton/CustomButton';
 import './PearlSpotLightOne.css';
 
 const PearlSpotLightOne = ({ product }) => {
@@ -14,7 +14,7 @@ const PearlSpotLightOne = ({ product }) => {
                     <h4 style={{ color: "#00a651", fontWeight: "bolder", marginBottom: "20px" }}>{productName}</h4>
                     <h6 style={{ marginBottom: "20px" }}> <span style={{ color: "#777777", fontWeight: "bold" }}>Create your beauty with</span> <span style={{ color: "#00a651" }} >{productTitle}</span></h6>
                     <p style={{ color: "#777777" }}>{productDesc}</p>
-                    <ShopNowButton title="Shop Now" />
+                    <CustomButton title="Shop Now" />
                 </div>
             </div>
         </div>

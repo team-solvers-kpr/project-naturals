@@ -6,14 +6,47 @@ import { ImStarEmpty } from "@react-icons/all-files/im/ImStarEmpty";
 import { IoCartOutline } from "@react-icons/all-files/io5/IoCartOutline";
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import ReactStars from 'react-rating-stars-component';
-import Button from '../../../../shared/Button/Button';
+
+import { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
+import CustomButton from '../../../../shared/CustomButton/CustomButton';
+
+
+
+const MyVerticallyCenteredModal = (props) => {
+
+    return (
+        <Modal
+            {...props}
+            size="xl"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            closeButton
+
+        >
+
+            <Modal.Header closeButton />
+
+            <Modal.Body>
+                <div className='d-flex'>
+                    <img width="50%" src={props.pearlItem.img} alt="" />
+                    <Modal.Title id="contained-modal-title-vcenter" >
+                        {props.pearlItem.name}
+                    </Modal.Title>
+                </div>
+            </Modal.Body>
+
+        </Modal>
+    )
+}
+
 
 
 const PearlTabItem = ({ pearlItem }) => {
     const { img, name, size, price, rating } = pearlItem
-
+    const [modalShow, setModalShow] = useState(false);
     return (
-        <div className="col-md-3">
+        <div className="col-md-6 col-xl-3">
             <div class="card mb-4 pearlTabItemCard">
                 <img src={img} class="card-img-top pearlTabItemCard-img" alt="..." />
                 <div class="card-body">
@@ -40,10 +73,17 @@ const PearlTabItem = ({ pearlItem }) => {
                         </div>
                     </div>
                     <div className='pearlTabItemCardCartAndEye'>
-                        <Button title={"Add to Cart"} icon={<IoCartOutline />} />
-                        <div className='cart-eye-div'>
+                        <CustomButton title={"Add to Cart"} icon={<IoCartOutline />} />
+
+                        <div className='cart-eye-div' onClick={() => setModalShow(true)} >
                             <AiFillEye style={{ fontSize: "30px", }} />
+
                         </div>
+                        <MyVerticallyCenteredModal
+                            pearlItem={pearlItem}
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        />
                     </div>
                 </div>
             </div>
