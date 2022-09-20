@@ -13,7 +13,7 @@ const SingleHelpPosts = ({ post }) => {
 
     return (
         <div className="col-md-6 col-lg-3 mt-4 mb-4"
-            data-aos="zoom-out-down"
+            data-aos="fade-in"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"

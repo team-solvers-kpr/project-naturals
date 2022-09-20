@@ -5,7 +5,8 @@ const SingleReview = ({ review }) => {
     const { name, img, testimonial, occupation } = review;
 
     return (
-        <div className='m-5' data-aos="fade-in"
+        <div className='m-5'
+            data-aos="fade-in"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000">

@@ -1,14 +1,15 @@
 import React from 'react';
-import pearlBannerImg from "../../../../assests/pearl/banner.png"
+import pearlBannerImg from "../../../../assests/pearl/banner.png";
+
 const PearlBanner = () => {
     return (
-        <div className="container-fluid" >
-            <div className='row' >
-                <div className='col-md-6'>
+        <div className='container-fluid'>
+            <div className='row'>
+                <div className='col-md-5'>
 
                 </div>
-                <div className='col-md-6'>
-                    <img width="100%" height="100%" src={pearlBannerImg} alt="" />
+                <div className='col-md-7' >
+                    <img style={{ height: "100vh", width: "100%" }} src={pearlBannerImg} alt="" />
                 </div>
             </div>
         </div>
