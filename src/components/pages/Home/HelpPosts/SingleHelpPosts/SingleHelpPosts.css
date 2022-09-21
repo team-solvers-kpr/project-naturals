@@ -1,0 +1,27 @@
+.blog-title {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-size: 22px;
+}
+
+.blog-post-description {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-size: 14px;
+}
+
+.readMoreLess-btn {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.helpPostBtn {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #00a651;
+    border: none;
+    border-radius: 5px;
+    width: 105px;
+    height: 48px;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}

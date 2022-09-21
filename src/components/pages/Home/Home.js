@@ -1,9 +1,12 @@
 import React from "react";
+import HelpPosts from "./HelpPosts/HelpPosts/HelpPosts";
+import Reviews from "./Reviews/Reviews/Reviews";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home1</h1>
+      <Reviews />
+      <HelpPosts />
     </div>
   );
 };
