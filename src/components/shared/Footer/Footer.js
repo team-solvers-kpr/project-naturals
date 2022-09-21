@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+// import {Swiper, Swiperslide} from "swiper/react";
 import borderElement from "../../../assets/images/boder-element.png";
 import mapImage from "../../../assets/images/naturalsHq.png";
 import callImage from "../../../assets/images/call.png";
