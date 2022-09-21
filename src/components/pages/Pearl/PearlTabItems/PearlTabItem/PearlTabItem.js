@@ -8,7 +8,7 @@ import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import ReactStars from 'react-rating-stars-component';
 
 import { useState } from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import CustomButton from '../../../../shared/CustomButton/CustomButton';
 
 
@@ -22,17 +22,43 @@ const MyVerticallyCenteredModal = (props) => {
             aria-labelledby="contained-modal-title-vcenter"
             centered
             closeButton
-
         >
 
             <Modal.Header closeButton />
 
             <Modal.Body>
-                <div className='d-flex'>
-                    <img width="50%" src={props.pearlItem.img} alt="" />
-                    <Modal.Title id="contained-modal-title-vcenter" >
-                        {props.pearlItem.name}
-                    </Modal.Title>
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src={props.pearlItem.img} class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 style={{ fontWeight: "bolder" }} class="card-title">{props.pearlItem.name}</h2>
+
+                                <p class="card-text"><small class="text-muted">{props.pearlItem.size}</small></p>
+
+                                <div style={{ color: "#dbdbdb", display: "flex", alignItems: "center" }}>
+                                    <ReactStars
+                                        count={5}
+                                        activeColor="orange"
+                                        isHalf={true}
+                                        size={20}
+                                        value={props.pearlItem.rating}
+                                        edit={false}
+                                        fullIcon={<ImStarFull />}
+                                        halfIcon={<ImStarHalf />}
+                                        emptyIcon={<ImStarEmpty />}
+                                    />
+                                    <span className='ms-1'>{props.pearlItem.rating}</span>
+                                </div>
+                                <h3 className='pearlTabItemCardPrice mt-4 mb-4'>৳{props.pearlItem.price}</h3>
+                                <CustomButton title={"Add to Cart"} icon={<IoCartOutline />} />
+                                <hr />
+                                <h6>Categories: {props.pearlItem.category}</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Modal.Body>
 

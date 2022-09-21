@@ -50,3 +50,7 @@
     height: 50px;
     width: 70px;
 }
+
+.modal-header {
+    border: none;
+}
