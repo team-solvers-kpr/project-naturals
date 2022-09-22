@@ -8,6 +8,8 @@ import tabIcon2 from '../../../../../assests/pearl/tabicon-2.png';
 import tabIcon3 from '../../../../../assests/pearl/tabicon-3.png';
 import tabIcon4 from '../../../../../assests/pearl/tabicon-4.png';
 import tabIcon5 from '../../../../../assests/pearl/tabicon-5.png';
+import CustomButton from '../../../../shared/CustomButton/CustomButton';
+import { Link } from 'react-router-dom';
 const PearlItemsTab = () => {
 
     const [pearlItems, setPearlItems] = useState([])
@@ -21,32 +23,32 @@ const PearlItemsTab = () => {
     return (
         <center className="pearlItemsTab">
             <h4 style={{ fontFamily: 'Source Sans Pro ,sans-serif', fontWeight: "bolder", color: "#c19e59", marginBottom: "20px" }}>Shop By Category</h4>
-            <Tabs >
+            <Tabs className="mb-5" >
                 <TabList disabled  >
                     <Tab >
-                        <img src={tabIcon1} alt="" /> <br />
+                        <img src={tabIcon1} alt="" className='pearlTabIcon' /> <br />
                         <span>Haircare</span>
                     </Tab>
                     <Tab >
-                        <img src={tabIcon2} alt="" /> <br />
+                        <img src={tabIcon2} alt="" className='pearlTabIcon' /> <br />
                         Skincare
                     </Tab>
-                    <Tab> <img src={tabIcon3} alt="" /> <br />
+                    <Tab>
+                        <img src={tabIcon3} alt="" className='pearlTabIcon' /> <br />
                         Bodycare
                     </Tab>
                     <Tab>
-                        <img src={tabIcon4} alt="" /> <br />
+                        <img src={tabIcon4} alt="" className='pearlTabIcon' /> <br />
                         Organic Soap
                     </Tab>
                     <Tab>
-                        <img src={tabIcon5} alt="" /> <br />
+                        <img src={tabIcon5} alt="" className='pearlTabIcon' /> <br />
                         Combo
                     </Tab>
-                    <hr className='w-50 mb-5' />
+
                 </TabList>
 
-
-                <TabPanel className='container'>
+                <TabPanel className='container mt-5'>
                     <div className='row'>
                         {
                             pearlItems.filter(category => category.category === "haircare").slice(0, 8).map((pearlItem) =>
@@ -94,6 +96,7 @@ const PearlItemsTab = () => {
                     </div>
                 </TabPanel>
             </Tabs>
+            <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" />
         </center>
     );
 };

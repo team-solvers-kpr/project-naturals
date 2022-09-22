@@ -29,10 +29,10 @@ const MyVerticallyCenteredModal = (props) => {
             <Modal.Body>
                 <div class="card mb-3" >
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-lg-5 col-md-6" >
                             <img src={props.pearlItem.img} class="img-fluid rounded-start" alt="..." />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-lg-7 col-md-6" >
                             <div class="card-body">
                                 <h2 style={{ fontWeight: "bolder" }} class="card-title">{props.pearlItem.name}</h2>
 
@@ -53,7 +53,7 @@ const MyVerticallyCenteredModal = (props) => {
                                     <span className='ms-1'>{props.pearlItem.rating}</span>
                                 </div>
                                 <h3 className='pearlTabItemCardPrice mt-4 mb-4'>৳{props.pearlItem.price}</h3>
-                                <CustomButton title={"Add to Cart"} icon={<IoCartOutline />} />
+                                <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
                                 <hr />
                                 <h6>Categories: {props.pearlItem.category}</h6>
                             </div>
@@ -99,7 +99,7 @@ const PearlTabItem = ({ pearlItem }) => {
                         </div>
                     </div>
                     <div className='pearlTabItemCardCartAndEye'>
-                        <CustomButton title={"Add to Cart"} icon={<IoCartOutline />} />
+                        <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
 
                         <div className='cart-eye-div' onClick={() => setModalShow(true)} >
                             <AiFillEye style={{ fontSize: "30px", }} />
