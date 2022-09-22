@@ -1,59 +1,91 @@
 [
     {
         "id": 1,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/1.png",
+        "img2": "./assets/images/homeShopItems/2.png",
+        "itemName": "ন্যাচারালস কালোজিরা ফুলের মধু (Blackseed Flower Honey)",
         "quantity": "৫০০গ্রাম",
+        "rating": 5,
+        "desc": "Naturals Black Seed Honey has a unique & sweet flavor with an exquisite aroma. It is known for its nutritional value, medicinal properties and for its ability to increase one’s immune system.",
+        "category": "Honey & Dates",
         "price": 650
     },
     {
         "id": 2,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
+        "img1": "./assets/images/homeShopItems/3.png",
+        "img2": "./assets/images/homeShopItems/4.png",
         "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
         "quantity": "৫০০গ্রাম",
-        "price": 650
+        "rating": 4,
+        "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
+        "category": "Honey & Dates",
+        "price": 635
     },
     {
         "id": 3,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
+        "img1": "./assets/images/homeShopItems/3.png",
+        "img2": "./assets/images/homeShopItems/4.png",
         "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "quantity": "২৫০গ্রাম",
+        "rating": 5,
+        "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
+        "category": "Honey & Dates",
+        "price": 335
     },
     {
         "id": 4,
-        "img": "",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/5.png",
+        "img2": "./assets/images/homeShopItems/6.png",
+        "itemName": "ন্যাচারালস গ্রামের চাকের মধু (Rural Honeycomb Honey)",
         "quantity": "৫০০গ্রাম",
-        "price": 650
+        "rating": 3,
+        "desc": "Well-known for its sweet exotic taste, Naturals Rural Honeycomb Honey is extracted and processed with perfection. Rich in antioxidants and antibacterial properties, this honey is the purest nutritious addition to your everyday life.",
+        "category": "Honey & Dates",
+        "price": 465
     },
     {
         "id": 5,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/7.png",
+        "img2": "./assets/images/homeShopItems/8.png",
+        "itemName": "ন্যাচারালস সরিষা ফুলের মধু (Mustard Flower Honey)",
+        "quantity": "২৫০গ্রাম",
+        "rating": 4,
+        "desc": "Naturals Mustard Flower Honey comes with natural antioxidants and many more natural healing properties. Collected from the flowers of yellow mustard, it is well-known for its perfect sweetness. This honey is a good source of essential minerals such as potassium, phosphorus, calcium, magnesium, zinc and sodium.",
+        "category": "Honey & Dates",
+        "price": 255
     },
     {
         "id": 6,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/9.png",
+        "img2": "./assets/images/homeShopItems/10.png",
+        "itemName": "ন্যাচারালস লিচু ফুলের মধু (Litchi Flower Honey)",
         "quantity": "৫০০গ্রাম",
-        "price": 650
+        "rating": 4,
+        "desc": "Collected directly from the litchi orchard during its flowering seasons, Naturals Premium Litchi Flower Honey delivers the intense fragrance of the litchi flower. Naturals Premium Litchi Flower Honey is well-known for its sweet, fresh exotic taste and rebuilding properties that boost the body’s immunity and strengthen the respiratory system.",
+        "category": "Honey & Dates",
+        "price": 495
     },
     {
         "id": 7,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/11.png",
+        "img2": "./assets/images/homeShopItems/12.png",
+        "itemName": "ন্যাচারালস সরিষা ফুলের মধু (Mustard Flower Honey)",
         "quantity": "৫০০গ্রাম",
-        "price": 650
+        "rating": 4,
+        "desc": "Naturals Mustard Flower Honey comes with natural antioxidants and many more natural healing properties. Collected from the flowers of yellow mustard, it is well-known for its perfect sweetness. This honey is a good source of essential minerals such as potassium, phosphorus, calcium, magnesium, zinc and sodium.",
+        "category": "Honey & Dates",
+        "price": 475
     },
     {
         "id": 8,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/13.png",
+        "img2": "",
+        "itemName": "ন্যাচারালস আজওয়া খেজুর (Ajwa Khejur)",
         "quantity": "৫০০গ্রাম",
-        "price": 650
+        "rating": 5,
+        "desc": "",
+        "category": "Honey & Dates",
+        "price": 845
     },
     {
         "id": 9,
@@ -391,5 +423,4 @@
         "quantity": "৫০০গ্রাম",
         "price": 650
     }
-  
 ]

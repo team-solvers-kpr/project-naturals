@@ -27,6 +27,12 @@
     height: 1105px;
 }
 
+.footer-social-icon {
+    background-color: #295746;
+    text-decoration: none;
+}
+
+
 @media screen and (max-width: 1200px) {
     .ssl {
         width: 100%;

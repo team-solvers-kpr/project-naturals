@@ -27,16 +27,16 @@ const MyVerticallyCenteredModal = (props) => {
             <Modal.Header closeButton />
 
             <Modal.Body>
-                <div class="card mb-3" >
-                    <div class="row g-0">
-                        <div class="col-lg-5 col-md-6" >
-                            <img src={props.pearlItem.img} class="img-fluid rounded-start" alt="..." />
+                <div className="card mb-3" >
+                    <div className="row g-0">
+                        <div className="col-lg-5 col-md-6" >
+                            <img src={props.pearlItem.img} className="img-fluid rounded-start" alt="..." />
                         </div>
-                        <div class="col-lg-7 col-md-6" >
-                            <div class="card-body">
-                                <h2 style={{ fontWeight: "bolder" }} class="card-title">{props.pearlItem.name}</h2>
+                        <div className="col-lg-7 col-md-6" >
+                            <div className="card-body">
+                                <h2 style={{ fontWeight: "bolder" }} className="card-title">{props.pearlItem.name}</h2>
 
-                                <p class="card-text"><small class="text-muted">{props.pearlItem.size}</small></p>
+                                <p className="card-text"><small className="text-muted">{props.pearlItem.size}</small></p>
 
                                 <div style={{ color: "#dbdbdb", display: "flex", alignItems: "center" }}>
                                     <ReactStars
@@ -73,15 +73,15 @@ const PearlTabItem = ({ pearlItem }) => {
     const [modalShow, setModalShow] = useState(false);
     return (
         <div className="col-md-6 col-xl-3">
-            <div class="card mb-4 pearlTabItemCard">
-                <img src={img} class="card-img-top pearlTabItemCard-img" alt="..." />
-                <div class="card-body">
-                    <h6 class="card-title pearlTabItemCardName">{name}</h6>
+            <div className="card mb-4 pearlTabItemCard">
+                <img src={img} className="card-img-top pearlTabItemCard-img" alt="..." />
+                <div className="card-body">
+                    <h6 className="card-title pearlTabItemCardName">{name}</h6>
                     <p className='text-muted pearlTabItemCardSize'>{size}</p>
 
                     <div className='pearlTabItemCardPriceAndRating'>
                         <div>
-                            <p class="card-text pearlTabItemCardPrice">৳{price}</p>
+                            <p className="card-text pearlTabItemCardPrice">৳{price}</p>
                         </div>
                         <div style={{ color: "#dbdbdb", display: "flex", alignItems: "center" }}>
                             <ReactStars

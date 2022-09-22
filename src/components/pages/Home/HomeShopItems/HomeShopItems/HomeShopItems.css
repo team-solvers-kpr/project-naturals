@@ -1,0 +1,34 @@
+.react-tabs__tab-list {
+    border: none;
+}
+
+.homeTab {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    display: inline-block;
+    list-style: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.homeTab {
+    outline: none;
+}
+
+.react-tabs__tab:focus:after {
+    background-color: #c19e59;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .pearlTabIcon {
+        width: 60px;
+    }
+
+    .react-tabs__tab {
+        font-size: 14px;
+    }
+}

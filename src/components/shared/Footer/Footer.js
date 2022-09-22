@@ -14,6 +14,10 @@ import googlePlay from "../../../assests/footer/play.png"
 import ssl from "../../../assests/footer/ssl.png"
 
 const Footer = () => {
+
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <div>
             <div>
@@ -44,23 +48,41 @@ const Footer = () => {
                 <center className="container">
                     <img src={topIcon} alt="" /><br />
                     <img src={locationIcon} alt="" />
-                    <h3>Naturals HQ</h3>
-                    <p>Atopia Aadit (8th floor), House-3, Road-1/A, Block-J , Baridhara, Dhaka-1212, Bangladesh</p>
-                    <h3>UK Office</h3>
-                    <p>The Arches Cranberry Lane <br />
+                    <h3 style={{
+                        fontWeight: "bold", color: "#ffff", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>Naturals HQ</h3>
+                    <p style={{
+                        fontWeight: "bold", color: "#ffff", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>Atopia Aadit (8th floor), House-3, Road-1/A, Block-J , Baridhara, Dhaka-1212, Bangladesh</p>
+                    <h3 style={{
+                        fontWeight: "bold", color: "#ffff", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>UK Office</h3>
+                    <p style={{
+                        fontWeight: "bold", color: "#ffff", marginTop: "30px", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>The Arches Cranberry Lane <br />
                         London, E16 4BJ, United Kingdom.</p>
                     <img src={callIcon} alt="" /><br />
-                    <h4>Care Line: +8809609 337 337</h4> <br />
-                    <img src={fbIcon} alt="" />
-                    <img src={twitterIcon} alt="" />
-                    <img src={linkedinIcon} alt="" />
-                    <img src={instaIcon} alt="" />
-                    <img src={youtubeIcon} alt="" /> <br />
+                    <h4 style={{
+                        fontWeight: "bold", color: "#ffff", fontFamily: 'Source Sans Pro, sans-serif',
+                    }}>Care Line: <a style={{ textDecoration: "none" }} href="callto:+8809609 337 337">+8809609 337 337</a></h4> <br />
+
+                    <a className='footer-social-icon' href="https://www.facebook.com/" rel="noreferrer" target="_blank" >  <img src={fbIcon} alt="" /></a>
+                    <a className='footer-social-icon' href="https://www.twitter.com/" rel="noreferrer" target="_blank" > <img src={twitterIcon} alt="" /></a>
+                    <a className='footer-social-icon' href="https://www.linkedin.com/" rel="noreferrer" target="_blank" >  <img src={linkedinIcon} alt="" /></a>
+                    <a className='footer-social-icon' href="https://www.instagram.com/" rel="noreferrer" target="_blank" >   <img src={instaIcon} alt="" /></a>
+                    <a className='footer-social-icon' href="https://www.youtube.com/" rel="noreferrer" target="_blank" >    <img src={youtubeIcon} alt="" /> </a><br />
+
+
                     <img src={topIcon} alt="" /><br />
                     <img src={logo} alt="" />
-                    <h2>DOWNLOAD & ENJOY</h2>
+                    <h2 style={{
+                        fontWeight: "bold", color: "#00a700", marginTop: "30px", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>DOWNLOAD & ENJOY</h2>
                     <img src={googlePlay} alt="" /><br />
                     <img src={ssl} alt="" className='ssl' />
+                    <p style={{
+                        fontWeight: "bold", color: "#ffff", marginTop: "10px", fontFamily: 'Source Sans Pro, sans-serif'
+                    }}>Copyright {year}©️ Naturals</p>
                 </center>
             </div>
         </div>
