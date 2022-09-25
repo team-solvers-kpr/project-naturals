@@ -11,7 +11,7 @@ const HomeBanners = () => {
     }, [])
 
     return (
-        <div>
+        <div >
             {banners.map(banner => <HomeBanner key={banner.id} banner={banner} />
             )}
         </div>

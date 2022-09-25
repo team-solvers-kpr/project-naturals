@@ -3,6 +3,17 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import CustomButton from '../../../../shared/CustomButton/CustomButton';
 import HomeShopItem from '../HomeShopItem/HomeShopItem';
 import './HomeShopItems.css';
+import icon1 from '../../../../../assests/shopItem/Honey-Dates.jpeg'
+import icon2 from '../../../../../assests/shopItem/Finest-Herbs.jpeg'
+import icon3 from '../../../../../assests/shopItem/Nuts-Seeds.jpeg'
+import icon4 from '../../../../../assests/shopItem/Pickles-Spices.jpeg'
+import icon5 from '../../../../../assests/shopItem/icongr.jpg'
+import icon6 from '../../../../../assests/shopItem/Organic-Oil-Ghee-1-01.jpg'
+import icon7 from '../../../../../assests/shopItem/Gift-combo2.jpeg'
+import icon8 from '../../../../../assests/shopItem/Energy-Essentials.jpeg'
+import icon9 from '../../../../../assests/shopItem/Hair-Skin-care-2.jpeg'
+import icon10 from '../../../../../assests/shopItem/All-Natural.jpeg'
+
 
 const HomeShopItems = () => {
     const [shopItems, setShopItems] = useState([])
@@ -24,50 +35,82 @@ const HomeShopItems = () => {
                 <Tabs className="mb-5" >
                     <TabList >
                         <Tab className='homeTab' >
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img
+                                src={icon1}
+                                alt=""
+                                className='pearlTabIcon'
+                            />
+                            <br />
                             <span> Honey & Dates </span>
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon2}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Finest Herb
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon3}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Nut & Seeds
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon4}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Pickles & Spices
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon5}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Noboshokti
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon6}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Organic Oil & Ghee
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon7}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Gift Combo
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon8}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Energy Essentials
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon9}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             Hair & Skin Care
                         </Tab>
                         <Tab className='homeTab'>
-                            <img alt="" className='pearlTabIcon' /> <br />
+                            <img src={icon10}
+                                alt=""
+                                className='pearlTabIcon' />
+                            <br />
                             All Natural
                         </Tab>
 
                     </TabList>
 
-                    <TabPanel className='container-fluid'>
-                        <div className='row'>
+                    <TabPanel className='container'>
+                        <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
                                     <HomeShopItem key={shopItem.id} shopItem={shopItem} />

@@ -1,22 +1,25 @@
 import React from 'react';
+import './HomeBanner.css'
+
 
 const HomeBanner = ({ banner }) => {
     const { img1, img2, img3, img4 } = banner
 
     return (
-        <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel">
-            <div className="carousel-inner">
+        <div
+            id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel">
+            <div className="carousel-inner" >
                 <div className="carousel-item active" >
-                    <img src={img1} className="d-block w-100" alt="..." />
+                    <img src={img1} className="d-block homeBannerImg w-100" alt="..." />
                 </div>
                 <div className="carousel-item ">
-                    <img src={img2} className="d-block w-100" alt="..." />
+                    <img src={img2} className="d-block homeBannerImg w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src={img3} className="d-block w-100" alt="..." />
+                    <img src={img3} className="d-block homeBannerImg w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                    <img src={img4} className="d-block w-100" alt="..." />
+                    <img src={img4} className="d-block homeBannerImg w-100" alt="..." />
                 </div>
 
             </div>

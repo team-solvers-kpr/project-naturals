@@ -20,7 +20,7 @@ const PearlItemsTab = () => {
     }, [])
 
     return (
-        <center className="pearlItemsTab">
+        <center className="pearlItemsTab" >
             <h4 style={{ fontFamily: 'Source Sans Pro ,sans-serif', fontWeight: "bolder", color: "#c19e59", marginBottom: "20px" }}>Shop By Category</h4>
             <Tabs className="mb-5" >
                 <TabList >
@@ -48,7 +48,8 @@ const PearlItemsTab = () => {
                 </TabList>
 
                 <TabPanel className='container' >
-                    <div className='row'>
+                    <div className='row' data-aos="fade-right"
+                        data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "haircare").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
@@ -58,7 +59,7 @@ const PearlItemsTab = () => {
                 </TabPanel>
 
                 <TabPanel className='container'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-left" data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "skincare").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
@@ -68,7 +69,7 @@ const PearlItemsTab = () => {
                 </TabPanel>
 
                 <TabPanel className='container'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "bodycare").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
@@ -77,7 +78,7 @@ const PearlItemsTab = () => {
                     </div>
                 </TabPanel>
                 <TabPanel className='container'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "soap").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
@@ -86,7 +87,7 @@ const PearlItemsTab = () => {
                     </div>
                 </TabPanel>
                 <TabPanel className='container'>
-                    <div className='row'>
+                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "combo").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />

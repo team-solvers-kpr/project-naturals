@@ -19,7 +19,8 @@
         "rating": 4,
         "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
         "category": "Honey & Dates",
-        "price": 635
+        "price": 1020,
+        "discount": 50
     },
     {
         "id": 3,
@@ -30,7 +31,8 @@
         "rating": 5,
         "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
         "category": "Honey & Dates",
-        "price": 335
+        "price": 335,
+        "discount": 0
     },
     {
         "id": 4,
@@ -41,7 +43,8 @@
         "rating": 3,
         "desc": "Well-known for its sweet exotic taste, Naturals Rural Honeycomb Honey is extracted and processed with perfection. Rich in antioxidants and antibacterial properties, this honey is the purest nutritious addition to your everyday life.",
         "category": "Honey & Dates",
-        "price": 465
+        "price": 465,
+        "discount": 0
     },
     {
         "id": 5,
@@ -52,7 +55,8 @@
         "rating": 4,
         "desc": "Naturals Mustard Flower Honey comes with natural antioxidants and many more natural healing properties. Collected from the flowers of yellow mustard, it is well-known for its perfect sweetness. This honey is a good source of essential minerals such as potassium, phosphorus, calcium, magnesium, zinc and sodium.",
         "category": "Honey & Dates",
-        "price": 255
+        "price": 255,
+        "discount": 0
     },
     {
         "id": 6,
@@ -60,10 +64,11 @@
         "img2": "./assets/images/homeShopItems/10.png",
         "itemName": "ন্যাচারালস লিচু ফুলের মধু (Litchi Flower Honey)",
         "quantity": "৫০০গ্রাম",
-        "rating": 4,
+        "rating": 4.5,
         "desc": "Collected directly from the litchi orchard during its flowering seasons, Naturals Premium Litchi Flower Honey delivers the intense fragrance of the litchi flower. Naturals Premium Litchi Flower Honey is well-known for its sweet, fresh exotic taste and rebuilding properties that boost the body’s immunity and strengthen the respiratory system.",
         "category": "Honey & Dates",
-        "price": 495
+        "price": 495,
+        "discount": 0
     },
     {
         "id": 7,
@@ -74,7 +79,8 @@
         "rating": 4,
         "desc": "Naturals Mustard Flower Honey comes with natural antioxidants and many more natural healing properties. Collected from the flowers of yellow mustard, it is well-known for its perfect sweetness. This honey is a good source of essential minerals such as potassium, phosphorus, calcium, magnesium, zinc and sodium.",
         "category": "Honey & Dates",
-        "price": 475
+        "price": 475,
+        "discount": 0
     },
     {
         "id": 8,
@@ -85,13 +91,15 @@
         "rating": 5,
         "desc": "",
         "category": "Honey & Dates",
-        "price": 845
+        "price": 845,
+        "discount": 0
     },
     {
         "id": 9,
         "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
         "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
         "quantity": "৫০০গ্রাম",
+        "category": "Honey & Dates",
         "price": 650
     },
     {
