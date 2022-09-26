@@ -8,7 +8,8 @@
         "rating": 5,
         "desc": "Naturals Black Seed Honey has a unique & sweet flavor with an exquisite aroma. It is known for its nutritional value, medicinal properties and for its ability to increase one’s immune system.",
         "category": "Honey & Dates",
-        "price": 650
+        "price": 650,
+        "discount": 0
     },
     {
         "id": 2,
@@ -96,67 +97,111 @@
     },
     {
         "id": 9,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "img1": "./assets/images/homeShopItems/13.png",
+        "img2": "",
+        "itemName": "ন্যাচারালস আজওয়া খেজুর (Ajwa Khejur)",
         "quantity": "৫০০গ্রাম",
+        "rating": 5,
+        "desc": "",
         "category": "Honey & Dates",
-        "price": 650
+        "price": 845,
+        "discount": 0
     },
     {
         "id": 10,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/14.png",
+        "img2": "./assets/images/homeShopItems/15.png",
+        "itemName": "ন্যাচারালস অশ্বগন্ধা পাউডার (Aushwagondha Powder)",
+        "quantity": "১০০গ্রাম",
+        "rating": 5,
+        "desc": "",
+        "category": "Finest Herb",
+        "price": 345,
+        "discount": 0
     },
     {
         "id": 11,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/16.png",
+        "img2": "./assets/images/homeShopItems/17.png",
+        "itemName": "ন্যাচারালস ত্রিফলা চূর্ন (Triphola Powder)",
+        "quantity": "১০০গ্রাম",
+        "rating": 5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 145
     },
     {
         "id": 12,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/18.png",
+        "img2": "./assets/images/homeShopItems/19.png",
+        "itemName": "ন্যাচারালস মরিঙ্গা সুপার ফুড (Moringa)",
+        "quantity": "৯০গ্রাম",
+        "rating": 3.5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 235
     },
     {
         "id": 13,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/20.png",
+        "img2": "",
+        "itemName": "ন্যাচারালস ডায়বেটিস কেয়ার প্যাক (Diabetes Care Pack)",
+        "quantity": "",
+        "rating": 4.5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 10,
+        "price": 1020
     },
     {
         "id": 14,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/21.png",
+        "img2": "./assets/images/homeShopItems/22.png",
+        "itemName": "ন্যাচারালস জাম বীজ গুড়া (Jam Beez Powder)",
+        "quantity": "১২০ গ্রাম",
+        "rating": 3.5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 195
     },
     {
         "id": 15,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/23.png",
+        "img2": "./assets/images/homeShopItems/24.png",
+        "itemName": "ন্যাচারালস সোনাপাতা গুড়া (Sonapata Powder)",
+        "quantity": "৯০ গ্রাম",
+        "rating": 4.5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 145
     },
     {
         "id": 16,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "img1": "./assets/images/homeShopItems/25.png",
+        "img2": "./assets/images/homeShopItems/26.png",
+        "itemName": "ন্যাচারালস আমলকি গুড়া (Amloki Powder)",
+        "quantity": "১০০ গ্রাম",
+        "rating": 2.5,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 145
     },
     {
-        "id": 17,
-        "img": "https://naturals.com.bd/wp-content/uploads/2020/12/mixed-honey.jpeg",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "৫০০গ্রাম",
-        "price": 650
+        "id": 16,
+        "img1": "./assets/images/homeShopItems/27.png",
+        "img2": "./assets/images/homeShopItems/28.png",
+        "itemName": "ন্যাচারালস অর্জুন গুড়া (Arjun Powder)",
+        "quantity": "১০০ গ্রাম",
+        "rating": 4,
+        "desc": "",
+        "category": "Finest Herb",
+        "discount": 0,
+        "price": 145
     },
     {
         "id": 18,

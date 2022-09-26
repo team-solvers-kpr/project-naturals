@@ -3,7 +3,7 @@ import navIcon from '../../../assests/nav/nav.png';
 import './Navbar.css';
 import { FiSearch } from "@react-icons/all-files/fi/FiSearch";
 import { IoCartOutline } from "@react-icons/all-files/io5/IoCartOutline";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -17,11 +17,12 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" >HOME</Link>
+
+                            <NavLink to="/home" className="nav-link" >HOME</NavLink>
 
                         </li>
                         <li className="nav-item">
-                            <Link to="/pearl" className="nav-link" >PEARL</Link>
+                            <NavLink to="/pearl" className="nav-link" >PEARL</NavLink>
                         </li>
 
                         <li className="nav-item">

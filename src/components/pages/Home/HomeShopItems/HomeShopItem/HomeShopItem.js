@@ -20,7 +20,6 @@ const MyVerticallyCenteredModal = (props) => {
       size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      closeButton
     >
 
       <Modal.Header closeButton />
@@ -30,20 +29,50 @@ const MyVerticallyCenteredModal = (props) => {
           <div className="row g-0">
             <div className="col-lg-5 col-md-6" >
               {
-                props.shopItem.discount > 0 ? (
+                props.shopitem.discount > 0 ? (
                   <div className='discount-tag-modal'>
-                    <span className='ps-2'>{props.shopItem.discount}% off</span>
+                    <span className='ps-2'>{props.shopitem.discount}% off</span>
+
                   </div>
-                ) : <>
-                </>
+                ) :
+                  (
+                    <>
+                    </>
+                  )
               }
-              <img src={props.shopItem.img1} className="img-fluid" alt="..." />
+              <div id="carouselExampleControls" class="carousel slide carousel-modal" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src={props.shopitem.img1} class="w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src={props.shopitem.img2} class="w-100" alt="..." />
+                  </div>
+                </div>
+                {
+                  props.shopitem.img2 ? (
+                    <>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                    </>
+                  )
+                }
+              </div>
             </div>
             <div className="col-lg-7 col-md-6" >
               <div className="card-body">
-                <h2 style={{ fontWeight: "bolder" }} className="card-title">{props.shopItem.itemName}</h2>
+                <h2 style={{ fontWeight: "bolder" }} className="card-title">{props.shopitem.itemName}</h2>
 
-                <p className="card-text"><small className="text-muted">{props.shopItem.size}</small></p>
+                <p className="card-text" style={{ fontFamily: "Noto Sans Bengali", fontSize: "20px" }}><small className="text-muted">{props.shopitem.quantity}</small></p>
 
                 <div style={{ color: "#dbdbdb", display: "flex", alignItems: "center" }}>
                   <ReactStars
@@ -51,41 +80,47 @@ const MyVerticallyCenteredModal = (props) => {
                     activeColor="orange"
                     isHalf={true}
                     size={20}
-                    value={props.shopItem.rating}
+                    value={props.shopitem.rating}
                     edit={false}
                     fullIcon={<ImStarFull />}
                     halfIcon={<ImStarHalf />}
                     emptyIcon={<ImStarEmpty />}
                   />
-                  <span className='ms-1'>{props.shopItem.rating}</span>
+                  <span className='ms-1'>{props.shopitem.rating}</span>
                 </div>
                 <div>
                   {
-                    props.shopItem.discount ? (
+                    props.shopitem.discount ? (
                       <div className='d-flex'>
-                        <p className="card-text homeTabItemCardPriceDiscounted-modal">৳{props.shopItem.price}</p>
-                        <p className="card-text homeTabItemCardPrice-modal ms-4">৳{props.shopItem.price - (props.shopItem.price * props.shopItem.discount / 100)}</p>
+                        <p className="card-text homeTabItemCardPriceDiscounted-modal">৳{props.shopitem.price}</p>
+                        <p className="card-text homeTabItemCardPrice-modal ms-4">৳{props.shopitem.price - (props.shopitem.price * props.shopitem.discount / 100)}</p>
                       </div>
                     ) :
                       (
-                        <p className="card-text homeTabItemCardPrice-modal ">৳{props.shopItem.price}</p>
+                        <p className="card-text homeTabItemCardPrice-modal ">৳{props.shopitem.price}</p>
                       )
                   }
                 </div>
                 <p className='homeTabItemCardDesc-modal'>
-                  {props.shopItem.desc}
+                  {props.shopitem.desc}
                 </p>
-                <CounterButton amount={amount} setAmount={setAmount} />
-                <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+                <div className='d-flex'>
+                  <div>
+                    <CounterButton amount={amount} setAmount={setAmount} />
+                  </div>
+                  <div className="ms-3">
+                    <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+                  </div>
+                </div>
                 <hr />
-                <h6>Categories: {props.shopItem.category}</h6>
+                <h6 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>Categories: {props.shopitem.category}</h6>
               </div>
             </div>
           </div>
         </div>
       </Modal.Body>
 
-    </Modal>
+    </Modal >
   )
 }
 
@@ -103,7 +138,7 @@ const HomeShopItem = ({ shopItem }) => {
 
   return (
     <div className="col-md-6 col-xl-3 ">
-      <div className="card mb-4 homeTabItemCard ">
+      <div className="card mb-4 homeTabItemCard">
         {
           discount > 0 ? (
             <div className='discount-tag'>
@@ -128,7 +163,18 @@ const HomeShopItem = ({ shopItem }) => {
         }
         <div className="card-body">
           <h6 className="card-title homeTabItemCardName">{itemName}</h6>
-          <p className='text-muted homeTabItemCardSize'>{quantity}</p>
+          {
+
+            quantity ? (
+              <>
+                <p className='text-muted homeTabItemCardSize'>{quantity}</p>
+              </>
+            ) : (
+              <>
+                <p style={{ visibility: "hidden" }}>Quantity Unavailable</p>
+              </>
+            )
+          }
 
           <div className='homeTabItemCardPriceAndRating'>
             <div>
@@ -171,7 +217,7 @@ const HomeShopItem = ({ shopItem }) => {
 
             </div>
             <MyVerticallyCenteredModal
-              shopItem={shopItem}
+              shopitem={shopItem}
               show={modalShow}
               onHide={() => setModalShow(false)}
             />

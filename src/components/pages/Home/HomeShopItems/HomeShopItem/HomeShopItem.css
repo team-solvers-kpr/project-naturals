@@ -12,6 +12,7 @@
 .homeTabItemCardName {
     font-family: 'Noto Sans Bengali', sans-serif;
     font-weight: 500;
+    height: 40px;
 }
 
 .discount-tag {
@@ -27,9 +28,10 @@
     position: absolute;
     font-family: 'Source Sans Pro', sans-serif;
     background: #e22a32;
-    margin-top: 68px;
-    width: 73px;
-    border-radius: 0px 5px 5px 0px;
+    margin-top: -22px;
+    width: 75px;
+    height: 25px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .homeTabItemCard-img {

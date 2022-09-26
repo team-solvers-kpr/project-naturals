@@ -9,10 +9,12 @@ import ReactStars from 'react-rating-stars-component';
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import CustomButton from '../../../../shared/CustomButton/CustomButton';
+import CounterButton from '../../../../shared/CounterButton/CounterButton';
 
 
 
 const MyVerticallyCenteredModal = (props) => {
+    const [amount, setAmount] = useState(0);
 
     return (
         <Modal
@@ -52,9 +54,16 @@ const MyVerticallyCenteredModal = (props) => {
                                     <span className='ms-1'>{props.pearlItem.rating}</span>
                                 </div>
                                 <h3 className='pearlTabItemCardPrice mt-4 mb-4'>৳{props.pearlItem.price}</h3>
-                                <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+                                <div className='d-flex'>
+                                    <div>
+                                        <CounterButton amount={amount} setAmount={setAmount} />
+                                    </div>
+                                    <div className="ms-3">
+                                        <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+                                    </div>
+                                </div>
                                 <hr />
-                                <h6>Categories: {props.pearlItem.category}</h6>
+                                <h6 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>Categories: {props.pearlItem.category}</h6>
                             </div>
                         </div>
                     </div>

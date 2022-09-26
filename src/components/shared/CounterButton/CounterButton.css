@@ -1,0 +1,36 @@
+.counterBtn {
+    border: 2px solid #eeeeee;
+    width: 106px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+.incrementBtn {
+    margin-left: 2px;
+    font-weight: bolder;
+
+}
+
+.btn {
+    border: none;
+}
+
+.decrementBtn:hover {
+    color: #00a651;
+}
+
+.incrementBtn:hover {
+    color: #00a651;
+}
+
+.decrementBtn {
+    margin-right: 2px;
+    font-weight: bolder;
+
+}

@@ -24,7 +24,7 @@ const HomeShopItems = () => {
     }, [])
 
     return (
-        <div className='container-fluid mt-5'>
+        <div className='container mt-5'>
             <h2 className='text-center mb-5'><span style={{
                 fontWeight: "bold", marginTop: "30px", fontFamily: 'Source Sans Pro, sans-serif', fontSize: "25px"
             }}>Shop From</span><span style={{
@@ -120,50 +120,85 @@ const HomeShopItems = () => {
                     </TabPanel>
 
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInRight' >
+                            {
+                                shopItems.filter(category => category.category === "Finest Herb").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
 
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInLeft' >
+                            {
+                                shopItems.filter(category => category.category === "Nut & Seeds").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
-
+                        <div className='row animate__animated animate__fadeInRight' >
+                            {
+                                shopItems.filter(category => category.category === "Pickles & Spices").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInLeft' >
+                            {
+                                shopItems.filter(category => category.category === "Noboshokti").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInRight' >
+                            {
+                                shopItems.filter(category => category.category === "Organic Oil & Ghee").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInLeft' >
+                            {
+                                shopItems.filter(category => category.category === "Gift Combo").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInRight' >
+                            {
+                                shopItems.filter(category => category.category === "Energy Essentials").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInLeft' >
+                            {
+                                shopItems.filter(category => category.category === "Hair & Skin Care").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                     <TabPanel className='container'>
-                        <div className='row'>
-
+                        <div className='row animate__animated animate__fadeInLeft' >
+                            {
+                                shopItems.filter(category => category.category === "All Natural").slice(0, 8).map((shopItem) =>
+                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                )
+                            }
                         </div>
                     </TabPanel>
                 </Tabs>

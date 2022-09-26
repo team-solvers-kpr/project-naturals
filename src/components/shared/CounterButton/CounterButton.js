@@ -1,4 +1,5 @@
 import React from 'react';
+import './CounterButton.css';
 
 const CounterButton = ({ style, amount, setAmount }) => {
     const onIncrement = () => {
@@ -13,18 +14,22 @@ const CounterButton = ({ style, amount, setAmount }) => {
     };
     return (
         <div>
-            <div >
-                <button onClick={onDecrement} >
-                    <span textColor="#c4c4c4">
+            <div className='counterBtn'>
+
+                <span className='btn' onClick={onDecrement} >
+                    <span className='decrementBtn' >
                         -
                     </span>
-                </button>
-                <span>{amount}</span>
-                <button onClick={onIncrement} >
-                    <span textColor="#c4c4c4">
+                </span>
+
+                <span style={{ cursor: "default" }}>{amount}</span>
+
+                <span className=' btn' onClick={onIncrement} >
+                    <span className='incrementBtn' >
                         +
                     </span>
-                </button>
+                </span>
+
             </div>
         </div>
     );
