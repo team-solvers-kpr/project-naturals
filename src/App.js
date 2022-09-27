@@ -7,6 +7,7 @@ import Pearl from "./components/pages/Pearl/Pearl/Pearl";
 import Footer from "./components/shared/Footer/Footer";
 import { useLayoutEffect } from "react";
 import FindStore from "./components/pages/Find_Store/FindStore";
+import BecomeAWholesaler from "./components/pages/Become_A_Wholesaler/BecomeAWholesaler";
 
 
 const Wrapper = ({ children }) => {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/pearl" element={<Pearl />} />
         <Route path="/store" element={<FindStore />} />
+        <Route path="/becomeawholesaler" element={<BecomeAWholesaler />} />
       </Routes>
       <Footer />
     </Wrapper>

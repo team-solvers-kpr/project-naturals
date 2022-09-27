@@ -30,7 +30,12 @@ const Navbar = () => {
 
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/" >BECOME A WHOLESALER</a>
+
+                            <li className="nav-item">
+                                <NavLink to="/becomeawholesaler" className="nav-link" >BECOME A WHOLESALER</NavLink>
+
+                            </li>
+
                         </li>
                     </ul>
                     <form className="d-flex">
