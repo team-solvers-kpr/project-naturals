@@ -6,6 +6,7 @@ import Navbar from "./components/shared/NavBar/Navbar";
 import Pearl from "./components/pages/Pearl/Pearl/Pearl";
 import Footer from "./components/shared/Footer/Footer";
 import { useLayoutEffect } from "react";
+import FindStore from "./components/pages/Find_Store/FindStore";
 
 
 const Wrapper = ({ children }) => {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/pearl" element={<Pearl />} />
+        <Route path="/store" element={<FindStore />} />
       </Routes>
       <Footer />
     </Wrapper>

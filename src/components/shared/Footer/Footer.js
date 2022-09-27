@@ -46,7 +46,7 @@ const Footer = () => {
 
             <div className='footer-section '>
                 <center className="container">
-                    <img src={topIcon} alt="" /><br />
+                    <img className='topIcon' src={topIcon} alt="" /><br />
                     <img src={locationIcon} alt="" />
                     <h3 style={{
                         fontWeight: "bold", color: "#ffff", fontFamily: 'Source Sans Pro, sans-serif'
@@ -73,7 +73,7 @@ const Footer = () => {
                     <a className='footer-social-icon' href="https://www.youtube.com/" rel="noreferrer" target="_blank" >    <img src={youtubeIcon} alt="" /> </a><br />
 
 
-                    <img src={topIcon} alt="" /><br />
+                    <img className='topIcon' src={topIcon} alt="" /><br />
                     <img src={logo} alt="" />
                     <h2 style={{
                         fontWeight: "bold", color: "#00a700", marginTop: "30px", fontFamily: 'Source Sans Pro, sans-serif'

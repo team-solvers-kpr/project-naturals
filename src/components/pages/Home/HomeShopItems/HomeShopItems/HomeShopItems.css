@@ -7,11 +7,15 @@
     border: none;
     display: inline-block;
     list-style: none;
-    padding: 6px 10px;
+    padding: 6px 20px;
     cursor: pointer;
     border-bottom: 1px solid #eee;
     font-size: 14px;
     margin-bottom: 40px;
+}
+
+.homeShopItemsContainer {
+    padding: 0px 100px 0px 100px;
 }
 
 .homeTab {
@@ -23,8 +27,8 @@
 }
 
 @media screen and (max-width: 760px) {
-    .pearlTabIcon {
-        width: 60px;
+    .homeTab {
+        padding: 6px 0px;
     }
 
     .react-tabs__tab {
@@ -35,5 +39,9 @@
         overflow-x: scroll;
         white-space: nowrap;
         margin-bottom: 40px;
+    }
+
+    .homeShopItemsContainer {
+        padding: 0px 15px 0px 15px;
     }
 }
