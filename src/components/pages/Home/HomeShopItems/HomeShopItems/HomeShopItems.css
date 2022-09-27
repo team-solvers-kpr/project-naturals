@@ -20,15 +20,20 @@
 
 .react-tabs__tab:focus:after {
     background-color: #c19e59;
-
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 760px) {
     .pearlTabIcon {
         width: 60px;
     }
 
     .react-tabs__tab {
         font-size: 14px;
+    }
+
+    .homeTabsContainer {
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin-bottom: 40px;
     }
 }

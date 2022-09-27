@@ -27,7 +27,7 @@ const MyVerticallyCenteredModal = (props) => {
       <Modal.Body >
         <div className="card mb-3" >
           <div className="row g-0">
-            <div className="col-lg-5 col-md-6" >
+            <div className="col-lg-5 col-md-12" >
               {
                 props.shopitem.discount > 0 ? (
                   <div className='discount-tag-modal'>
@@ -52,11 +52,11 @@ const MyVerticallyCenteredModal = (props) => {
                 {
                   props.shopitem.img2 ? (
                     <>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <button class="carousel-control-prev modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <button class="carousel-control-next modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -68,7 +68,7 @@ const MyVerticallyCenteredModal = (props) => {
                 }
               </div>
             </div>
-            <div className="col-lg-7 col-md-6" >
+            <div className="col-lg-7 col-md-12" >
               <div className="card-body">
                 <h2 style={{ fontWeight: "bolder" }} className="card-title">{props.shopitem.itemName}</h2>
 
@@ -93,7 +93,7 @@ const MyVerticallyCenteredModal = (props) => {
                     props.shopitem.discount ? (
                       <div className='d-flex'>
                         <p className="card-text homeTabItemCardPriceDiscounted-modal">৳{props.shopitem.price}</p>
-                        <p className="card-text homeTabItemCardPrice-modal ms-4">৳{props.shopitem.price - (props.shopitem.price * props.shopitem.discount / 100)}</p>
+                        <p className="card-text homeTabItemCardPrice-modal ms-4">৳{Math.round(props.shopitem.price - (props.shopitem.price * props.shopitem.discount / 100))}</p>
                       </div>
                     ) :
                       (
@@ -137,7 +137,7 @@ const HomeShopItem = ({ shopItem }) => {
   }
 
   return (
-    <div className="col-md-6 col-xl-3 ">
+    <div className="col-md-6 col-xl-3">
       <div className="card mb-4 homeTabItemCard">
         {
           discount > 0 ? (
@@ -213,7 +213,7 @@ const HomeShopItem = ({ shopItem }) => {
             <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
 
             <div className='home-cart-eye-div' onClick={() => setModalShow(true)} >
-              <AiFillEye style={{ fontSize: "30px", }} />
+              <AiFillEye style={{ fontSize: "25px", }} />
 
             </div>
             <MyVerticallyCenteredModal

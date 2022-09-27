@@ -104,6 +104,16 @@
     border: none;
 }
 
+.modal-carousel-btn {
+    background-color: #00a651;
+    margin: auto;
+    height: 40px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 @media screen and (max-width: 1080px) {
     .discount-tag {
         margin-top: 70px;

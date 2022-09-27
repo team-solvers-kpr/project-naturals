@@ -108,7 +108,7 @@ const PearlTabItem = ({ pearlItem }) => {
                         <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
 
                         <div className='pearl-cart-eye-div' onClick={() => setModalShow(true)} >
-                            <AiFillEye style={{ fontSize: "30px", }} />
+                            <AiFillEye style={{ fontSize: "25px", }} />
 
                         </div>
                         <MyVerticallyCenteredModal

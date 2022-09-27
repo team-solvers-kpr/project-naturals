@@ -48,7 +48,7 @@ const PearlItemsTab = () => {
                 </TabList>
 
                 <TabPanel className='container' >
-                    <div className='row' data-aos="fade-right"
+                    <div className='row' data-aos="fade-in"
                         data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "haircare").slice(0, 8).map((pearlItem) =>
@@ -59,7 +59,7 @@ const PearlItemsTab = () => {
                 </TabPanel>
 
                 <TabPanel className='container'>
-                    <div className='row' data-aos="fade-left" data-aos-duration="1000">
+                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
                         {
                             pearlItems.filter(category => category.category === "skincare").slice(0, 8).map((pearlItem) =>
                                 <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
