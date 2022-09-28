@@ -1,0 +1,25 @@
+.bottomPearlBannerText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.bottomPearlBannerText2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.pearlIcons {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .bottomPearlBannerImg {
+        width: 100%;
+    }
+}

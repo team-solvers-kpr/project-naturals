@@ -1,0 +1,52 @@
+.pearlTabItemCard {
+    text-align: left;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.pearlTabItemCard:hover {
+    outline: 1px solid #00a651;
+}
+
+.pearlTabItemCardName {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-weight: 500;
+}
+
+.pearlTabItemCard-img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pearlTabItemCardPriceAndRating {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.pearlTabItemCardPrice {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-weight: bolder;
+    color: #00a651;
+}
+
+.pearlTabItemCardCartAndEye {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-eye-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #00a651;
+    border-radius: 5px;
+    color: #00a651;
+    height: 50px;
+    width: 70px;
+}

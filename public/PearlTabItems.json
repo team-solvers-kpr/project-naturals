@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "img": "./assets/images/pearlTabItems/pearltabitem-1.jpg",
+        "category": "haircare",
+        "name": "Pearl Onion Oil | পার্ল অনিওন অয়েল – 75ml",
+        "size": "75ml",
+        "price": 695,
+        "rating": 3.5
+    },
+    {
+        "id": 2,
+        "img": "./assets/images/pearlTabItems/pearltabitem-2.jpg",
+        "category": "haircare",
+        "name": "Pearl Peanut Oil | পার্ল পিনাট ওয়েল – 75ml",
+        "size": "75ml",
+        "price": 255,
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "img": "./assets/images/pearlTabItems/pearltabitem-3.jpg",
+        "category": "haircare",
+        "name": "Pearl Coconut Oil | পার্ল নারিকেল তেল – 75ml",
+        "size": "75ml",
+        "price": 325,
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "img": "./assets/images/pearlTabItems/pearltabitem-4.jpg",
+        "category": "haircare",
+        "name": "Pearl Henna Powder | পার্ল হেনা পাউডার",
+        "size": "80 gram",
+        "price": 235,
+        "rating": 3
+    },
+    {
+        "id": 5,
+        "img": "./assets/images/pearlTabItems/pearltabitem-5.jpg",
+        "category": "haircare",
+        "name": "Pearl Reetha Powder | পার্ল রিঠা পাউডার",
+        "size": "80 gram",
+        "price": 225,
+        "rating": 3
+    },
+    {
+        "id": 6,
+        "img": "./assets/images/pearlTabItems/pearltabitem-6.jpg",
+        "category": "haircare",
+        "name": "Pearl Shikakai Powder | পার্ল শিকাকাই গুঁড়া",
+        "size": "80 gram",
+        "price": 225,
+        "rating": 2
+    },
+    {
+        "id": 7,
+        "img": "./assets/images/pearlTabItems/pearltabitem-7.jpg",
+        "category": "haircare",
+        "name": "Pearl Aloe Vera Oil | পার্ল এলোভেরা তেল – 75ml",
+        "size": "75 ml",
+        "price": 695,
+        "rating": 3
+    },
+    {
+        "id": 8,
+        "img": "./assets/images/pearlTabItems/pearltabitem-8.jpg",
+        "category": "haircare",
+        "name": "Pearl Amla Oil | পার্ল আমলা তেল – 75ml",
+        "size": "75 ml",
+        "price": 695,
+        "rating": 5
+    },
+    {
+        "id": 9,
+        "img": "./assets/images/pearlTabItems/pearltabitem-9.jpg",
+        "category": "haircare",
+        "name": "Pearl Amla Oil | পার্ল আমলা তেল – 75ml",
+        "size": "75 ml",
+        "price": 695,
+        "rating": 5
+    },
+    {
+        "id": 10,
+        "img": "./assets/images/pearlTabItems/pearltabitem-10.jpg",
+        "category": "haircare",
+        "name": "Pearl Neem Oil | পার্ল নিম ওয়েল – 75ml",
+        "size": "75 ml",
+        "price": 555,
+        "rating": 2
+    },
+    {
+        "id": 11,
+        "img": "./assets/images/pearlTabItems/pearltabitem-11.jpg",
+        "category": "haircare",
+        "name": "Pearl Rose Oil | পার্ল রোজ অয়েল – 75ml",
+        "size": "75 ml",
+        "price": 555,
+        "rating": 3
+    },
+    {
+        "id": 12,
+        "img": "./assets/images/pearlTabItems/pearltabitem-12.jpg",
+        "category": "haircare",
+        "name": "Pearl Mixed Miracle Oil | পার্ল মিক্সড মিরাকল তেল – 75ml",
+        "size": "75 ml",
+        "price": 695,
+        "rating": 4
+    },
+    {
+        "id": 13,
+        "img": "./assets/images/pearlTabItems/pearltabitem-13.jpg",
+        "category": "skincare",
+        "name": "Pearl Fuller Earth Powder ( Multani Mati ) | পার্ল মুলতানী মাটি",
+        "size": "80 gram",
+        "price": 175,
+        "rating": 2
+    },
+    {
+        "id": 14,
+        "img": "./assets/images/pearlTabItems/pearltabitem-14.jpg",
+        "category": "skincare",
+        "name": "Pearl Orange Peel Powder | পার্ল কমলার খোসা গুড়া",
+        "size": "80 gram",
+        "price": 285,
+        "rating": 3
+    },
+    {
+        "id": 15,
+        "img": "./assets/images/pearlTabItems/pearltabitem-15.jpg",
+        "category": "skincare",
+        "name": "Pearl Pomegranate Peel Powder | পার্ল ডালিম খোসা গুড়া",
+        "size": "80 gram",
+        "price": 255,
+        "rating": 5
+    },
+    {
+        "id": 16,
+        "img": "./assets/images/pearlTabItems/pearltabitem-16.jpg",
+        "category": "skincare",
+        "name": "Pearl Rose Petal Powder | পার্ল গোলাপ পাপড়ি গুড়া",
+        "size": "80 gram",
+        "price": 285,
+        "rating": 2
+    },
+    {
+        "id": 17,
+        "img": "./assets/images/pearlTabItems/pearltabitem-17.jpg",
+        "category": "skincare",
+        "name": "Pearl Sandalwood Powder | পার্ল চন্দন গুঁড়া",
+        "size": "80 gram",
+        "price": 3735,
+        "rating": 4
+    },
+    {
+        "id": 18,
+        "img": "./assets/images/pearlTabItems/pearltabitem-1.jpg",
+        "category": "bodycare",
+        "name": "Pearl Onion Oil | পার্ল অনিওন অয়েল – 75ml",
+        "size": "75ml",
+        "price": 695,
+        "rating": 4
+    },
+    {
+        "id": 19,
+        "img": "./assets/images/pearlTabItems/pearltabitem-2.jpg",
+        "category": "soap",
+        "name": "Pearl Peanut Oil | পার্ল পিনাট ওয়েল – 75ml",
+        "size": "75ml",
+        "price": 255,
+        "rating": 4
+    },
+    {
+        "id": 20,
+        "img": "./assets/images/pearlTabItems/pearltabitem-3.jpg",
+        "category": "combo",
+        "name": "Pearl Coconut Oil | পার্ল নারিকেল তেল – 75ml",
+        "size": "75ml",
+        "price": 325,
+        "rating": 4
+    }
+]

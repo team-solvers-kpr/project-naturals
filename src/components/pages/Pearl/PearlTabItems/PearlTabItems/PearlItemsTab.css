@@ -1,0 +1,29 @@
+.pearlItemsTab {
+    margin: 80px 0px 80px 0px;
+    padding: 100px 0px 100px 0px;
+    background-color: #f9f9f9;
+}
+
+.react-tabs__tab-list {
+    border: none;
+}
+
+.react-tabs__tab {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    font-size: 20px;
+    background-color: #f9f9f9;
+}
+
+.react-tabs__tab:hover {
+    color: #00a651;
+}
+
+.react-tabs__tab--selected {
+    color: #c19e59;
+
+}
+
+.react-tabs__tab:focus:after {
+    background-color: #f9f9f9
+}
