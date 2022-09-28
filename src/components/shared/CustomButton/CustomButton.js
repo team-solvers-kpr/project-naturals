@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CustomButton = ({ title, icon }) => {
+const CustomButton = ({ title, icon, backgroundColor, color }) => {
     return (
         <>
             <button style={{
@@ -8,10 +8,10 @@ const CustomButton = ({ title, icon }) => {
                 alignItems: "center",
                 justifyContent: "center",
                 fontFamily: 'Source Sans Pro',
-                backgroundColor: "#ffffff",
+                backgroundColor: backgroundColor,
                 border: "2px solid #00a651",
                 borderRadius: " 5px",
-                color: "#00a651",
+                color: color,
                 fontSize: "16px",
                 width: "140px",
                 height: "50px",

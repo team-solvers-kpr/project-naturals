@@ -39,7 +39,7 @@
     margin-bottom: 15px;
 }
 
-.cart-eye-div {
+.pearl-cart-eye-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,4 +49,8 @@
     color: #00a651;
     height: 50px;
     width: 70px;
+}
+
+.modal-header {
+    border: none;
 }

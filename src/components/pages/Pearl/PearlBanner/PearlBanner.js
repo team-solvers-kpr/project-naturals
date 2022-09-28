@@ -9,7 +9,7 @@ const PearlBanner = () => {
 
                 </div>
                 <div className='col-md-7' >
-                    <img style={{ height: "100vh", width: "100%" }} src={pearlBannerImg} alt="" />
+                    <img style={{ width: "100%" }} src={pearlBannerImg} alt="" />
                 </div>
             </div>
         </div>
