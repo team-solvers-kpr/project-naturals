@@ -3,15 +3,19 @@ import PearlBottomBanner from '../PearlBottomBanner/PearlBottomBanner';
 import PearlBanner from '../PearlBanner/PearlBanner';
 import PearlSpotLight from '../PearlSpotLight/PearlSpotLight';
 import PearlTabItems from "../PearlTabItems/PearlTabItems/PearlItemsTab"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Pearl = () => {
     return (
-        <div>
+        <HelmetProvider>
+            <Helmet>
+                <title>Naturals || Pearl</title>
+            </Helmet>
             <PearlBanner />
             <PearlTabItems />
             <PearlSpotLight />
             <PearlBottomBanner />
-        </div>
+        </HelmetProvider>
     );
 };
 

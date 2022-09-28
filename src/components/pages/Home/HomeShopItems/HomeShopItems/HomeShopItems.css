@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 760px) {
     .homeTab {
-        padding: 6px 0px;
+        padding: 6px 5px;
     }
 
     .react-tabs__tab {

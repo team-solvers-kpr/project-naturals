@@ -40,25 +40,25 @@ const MyVerticallyCenteredModal = (props) => {
                     </>
                   )
               }
-              <div id="carouselExampleControls" class="carousel slide carousel-modal" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src={props.shopitem.img1} class="w-100" alt="..." />
+              <div id="carouselExampleControls" className="carousel slide carousel-modal" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={props.shopitem.img1} className="w-100" alt="..." />
                   </div>
-                  <div class="carousel-item">
-                    <img src={props.shopitem.img2} class="w-100" alt="..." />
+                  <div className="carousel-item">
+                    <img src={props.shopitem.img2} className="w-100" alt="..." />
                   </div>
                 </div>
                 {
                   props.shopitem.img2 ? (
                     <>
-                      <button class="carousel-control-prev modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                      <button className="carousel-control-prev modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                      <button className="carousel-control-next modal-carousel-btn" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
                       </button>
                     </>
                   ) : (
