@@ -4,9 +4,9 @@ import { useState } from 'react';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import './FindStore.css';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const FindStore = () => {
-
     const [allData, setAllData] = useState([]);
     useEffect(() => {
         fetch('storeData.json')
@@ -39,27 +39,37 @@ const FindStore = () => {
         }];
 
     const { SearchBar } = Search;
+
     return (
-        <ToolkitProvider
-            keyField="id"
-            data={allData}
-            columns={columns}
-            search
-        >
-            {
-                props => (
-                    <div className="container mt-5">
-                        <SearchBar {...props.searchProps} />
-                        <br />
-                        <BootstrapTable
-                            {...props.baseProps}
-                            hover
-                            pagination={paginationFactory({ sizePerPage: 19 })}
-                        />
-                    </div>
-                )
-            }
-        </ToolkitProvider>
+        <HelmetProvider>
+            <Helmet>
+                <title>Store Location: Naturals</title>
+            </Helmet>
+            <ToolkitProvider
+                keyField="id"
+                data={allData}
+                columns={columns}
+                search
+            >
+
+                {
+                    props => (
+                        <div className="container mt-5">
+                            <h6 className='find-store-heading'>Naturals All Store Locations | Find Your Desired Location</h6>
+                            <SearchBar {...props.searchProps} />
+                            <br />
+                            <BootstrapTable
+
+                                {...props.baseProps}
+                                hover
+                                striped
+                                pagination={paginationFactory()}
+                            />
+                        </div>
+                    )
+                }
+            </ToolkitProvider>
+        </HelmetProvider>
     );
 };
 

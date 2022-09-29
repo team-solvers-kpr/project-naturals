@@ -6,6 +6,10 @@ import { IoCartOutline } from "@react-icons/all-files/io5/IoCartOutline";
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const handleSearch = e => {
+        e.preventDefault()
+    }
     return (
         <nav className="navbar navbar-expand-lg sticky-top" style={{ backgroundColor: "#00a651" }}>
             <div className="container">
@@ -38,9 +42,9 @@ const Navbar = () => {
 
                         </li>
                     </ul>
-                    <form className="d-flex">
+                    <form className="d-flex" onSubmit={handleSearch} >
                         <input className="form-control navbar-search-input" type="search" placeholder="I'm searching for..." aria-label="Search" />
-                        <button className="navbar-search-btn" type="submit"> <FiSearch />Search</button>
+                        <button className="navbar-search-btn" > <FiSearch />Search</button>
                     </form>
 
                     <div className="nav-item dropdown shoppingCart-icon">

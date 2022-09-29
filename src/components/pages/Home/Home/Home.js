@@ -3,17 +3,21 @@ import HelpPosts from "../HelpPosts/HelpPosts/HelpPosts";
 import HomeBanners from "../HomeBanners/HomeBanners/HomeBanners";
 import HomeShopItems from "../HomeShopItems/HomeShopItems/HomeShopItems";
 import Reviews from "../Reviews/Reviews/Reviews";
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Home = () => {
 
   return (
-    <div>
+    <HelmetProvider>
+      <Helmet>
+        <title>Naturals: Best Organic Food Store in Bangladesh</title>
+      </Helmet>
       <HomeBanners />
       <HomeShopItems />
       <Reviews />
       <HelpPosts />
-    </div>
+
+    </HelmetProvider>
   );
 };
 

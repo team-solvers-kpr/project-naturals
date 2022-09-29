@@ -11,7 +11,7 @@ const PearlSpotLightTwo = ({ product }) => {
                     <h4 style={{ color: "#00a651", fontWeight: "bolder", marginBottom: "20px" }}>{productName}</h4>
                     <h6 style={{ marginBottom: "20px" }}> <span style={{ color: "#777777", fontWeight: "bold" }}>Create your beauty with</span> <span style={{ color: "#00a651" }} >{productTitle}</span></h6>
                     <p style={{ color: "#777777" }}>{productDesc}</p>
-                    <CustomButton title="Shop Now" backgroundColor=" #ffffff" color="#00a651" />
+                    <CustomButton title="Shop Now" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" />
                 </div>
                 <div className='spotLight-2-img'>
                     <img src={img} alt="" />
