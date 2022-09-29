@@ -109,7 +109,7 @@ const MyVerticallyCenteredModal = (props) => {
                     <CounterButton amount={amount} setAmount={setAmount} />
                   </div>
                   <div className="ms-3">
-                    <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+                    <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
                   </div>
                 </div>
                 <hr />
@@ -210,7 +210,7 @@ const HomeShopItem = ({ shopItem }) => {
             </div>
           </div>
           <div className='homeTabItemCardCartAndEye'>
-            <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" icon={<IoCartOutline />} />
+            <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
 
             <div className='home-cart-eye-div' onClick={() => setModalShow(true)} >
               <AiFillEye style={{ fontSize: "25px", }} />
