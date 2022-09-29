@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Naturals || Home</title>
+        <title>Naturals: Best Organic Food Store in Bangladesh</title>
       </Helmet>
       <HomeBanners />
       <HomeShopItems />

@@ -43,7 +43,7 @@ const FindStore = () => {
     return (
         <HelmetProvider>
             <Helmet>
-                <title>Naturals || Find Store</title>
+                <title>Store Location: Naturals</title>
             </Helmet>
             <ToolkitProvider
                 keyField="id"

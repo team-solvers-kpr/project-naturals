@@ -9,7 +9,7 @@ const Pearl = () => {
     return (
         <HelmetProvider>
             <Helmet>
-                <title>Naturals || Pearl</title>
+                <title>Pearl : Naturals</title>
             </Helmet>
             <PearlBanner />
             <PearlTabItems />
