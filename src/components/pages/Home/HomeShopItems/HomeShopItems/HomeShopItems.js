@@ -202,7 +202,7 @@ const HomeShopItems = () => {
                         </div>
                     </TabPanel>
                 </Tabs>
-                <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" />
+                <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
             </center>
 
         </div>

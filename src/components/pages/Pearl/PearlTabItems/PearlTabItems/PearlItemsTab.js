@@ -96,7 +96,7 @@ const PearlItemsTab = () => {
                     </div>
                 </TabPanel>
             </Tabs>
-            <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" />
+            <CustomButton title="VIEW ALL" color="#ffffff" border="2px solid #00a651" backgroundColor="#00a651" />
         </center>
     );
 };
