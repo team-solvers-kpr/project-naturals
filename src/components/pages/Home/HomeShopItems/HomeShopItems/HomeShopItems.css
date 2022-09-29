@@ -14,12 +14,12 @@
     margin-bottom: 40px;
 }
 
-.homeShopItemsContainer {
-    padding: 0px 100px 0px 100px;
-}
-
 .homeTab {
     outline: none;
+}
+
+.homeTabItems {
+    padding: 0 100px 0 100px;
 }
 
 .react-tabs__tab:focus:after {
@@ -41,7 +41,7 @@
         margin-bottom: 40px;
     }
 
-    .homeShopItemsContainer {
+    .homeTabItems {
         padding: 0px 15px 0px 15px;
     }
 }

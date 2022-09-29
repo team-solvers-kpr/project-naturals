@@ -108,7 +108,7 @@ const HomeShopItems = () => {
 
                     </TabList>
 
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
@@ -118,7 +118,7 @@ const HomeShopItems = () => {
                         </div>
                     </TabPanel>
 
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInRight' >
                             {
                                 shopItems.filter(category => category.category === "Finest Herb").slice(0, 8).map((shopItem) =>
@@ -128,7 +128,7 @@ const HomeShopItems = () => {
                         </div>
                     </TabPanel>
 
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Nut & Seeds").slice(0, 8).map((shopItem) =>
@@ -137,7 +137,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInRight' >
                             {
                                 shopItems.filter(category => category.category === "Pickles & Spices").slice(0, 8).map((shopItem) =>
@@ -146,7 +146,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Noboshokti").slice(0, 8).map((shopItem) =>
@@ -155,7 +155,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInRight' >
                             {
                                 shopItems.filter(category => category.category === "Organic Oil & Ghee").slice(0, 8).map((shopItem) =>
@@ -164,7 +164,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Gift Combo").slice(0, 8).map((shopItem) =>
@@ -173,7 +173,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInRight' >
                             {
                                 shopItems.filter(category => category.category === "Energy Essentials").slice(0, 8).map((shopItem) =>
@@ -182,7 +182,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className=''>
+                    <TabPanel className='homeTabItems'>
                         <div className='row animate__animated animate__fadeInLeft' >
                             {
                                 shopItems.filter(category => category.category === "Hair & Skin Care").slice(0, 8).map((shopItem) =>
@@ -191,7 +191,7 @@ const HomeShopItems = () => {
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel className='' >
+                    <TabPanel className='homeTabItems' >
                         <div className='row' data-aos="fade-in"
                             data-aos-duration="1000">
                             {
