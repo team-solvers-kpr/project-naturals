@@ -41,7 +41,7 @@ const Reviews = () => {
     };
     return (
         <>
-            <h2 className='text-center testimonial-title'><span className='testimonial-title-span'>What our</span>  Happy Customers say</h2>
+            <h2 className='text-center testimonial-title mt-5'><span className='testimonial-title-span'>What our</span>  Happy Customers say</h2>
             <div className='container review-container'>
                 <Carousel
                     className='container'

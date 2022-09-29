@@ -1,0 +1,274 @@
+[
+    {
+        "id": "1",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "2",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Top one pharmacy",
+        "address": "House 02, Road 11, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "3",
+        "city": "Dhaka",
+        "area": "Moddo badda",
+        "storeName": "Ashik pharma and departmental store",
+        "address": "House 11, Road 6, Gudara ghat, Moddo badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "4",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Health care pharma",
+        "address": "Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "5",
+        "city": "Dhaka",
+        "area": "Vatara",
+        "storeName": "Mawlana drag house",
+        "address": "Shah ali market, (Beside 1158/ nurer chala main road panir pamper pashe),Vatara.",
+        "action": ":"
+    },
+    {
+        "id": "6",
+        "city": "Dhaka",
+        "area": "Bashundhara",
+        "storeName": "Taz pharma",
+        "address": "Ever care hospital gate (Beside Dhali food cort),bashundhara.Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "7",
+        "city": "Dhaka",
+        "area": "Dhanmondi",
+        "storeName": "Amar pharma ltd",
+        "address": "1/1 shobhanbag, Mirpur road, Dhanmondi. ( near by Daffodil university)",
+        "action": ":"
+    },
+    {
+        "id": "8",
+        "city": "Dhaka",
+        "area": "Dhanmondi",
+        "storeName": "Konna Super Shop",
+        "address": "House 37, Road 7, (Beside Baitul aman masjid),Dhanmondi",
+        "action": ":"
+    },
+    {
+        "id": "9",
+        "city": "Dhaka",
+        "area": "Manik Nagar",
+        "storeName": "Poshari",
+        "address": "76/1 Hometake taher tower,manik nagar. Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "10",
+        "city": "Dhaka",
+        "area": "Mohammadpur ",
+        "storeName": "Al shefa pharmacy Ltd",
+        "address": "House 19, Shaker tek 8, Adabor main road, Mohammadpur,Dhaka-1207",
+        "action": ":"
+    },
+    {
+        "id": "12",
+        "city": "Dhaka",
+        "area": "Mohammadpur ",
+        "storeName": "Al shefa pharmacy 2",
+        "address": "House 533, Road 11, Baitul aman housing society , Adabor,Mohammadpur,Dhaka-1207",
+        "action": ":"
+    },
+    {
+        "id": "13",
+        "city": "Dhaka",
+        "area": "Mohammadpur",
+        "storeName": "Al shefa pharmacy 3",
+        "address": "8/1 Mohammidhi housing( Beside shiya masjid) Mohammadpur,Dhaka-1207",
+        "action": ":"
+    },
+    {
+        "id": "14",
+        "city": "Dhaka",
+        "area": "Mohammadpur",
+        "storeName": "Al shefa pharmacy 4",
+        "address": "House 2, Kaderabad housing, Khatashur,Mohammadpur,Dhaka-1207",
+        "action": ":"
+    },
+    {
+        "id": "15",
+        "city": "Dhaka",
+        "area": "Rampura ",
+        "storeName": "Health care pharma",
+        "address": "House 04, Road 4, Block E, Banosree main road rampura,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "16",
+        "city": "Dhaka",
+        "area": "Rayerbag ",
+        "storeName": "Amina pharma",
+        "address": "147/1 sher e bangla road, (Beside mukti cinema hall), Rayerbag, Dhaka-1209",
+        "action": ":"
+    },
+    {
+        "id": "17",
+        "city": "Dhaka",
+        "area": "Uttara",
+        "storeName": "Inoviz Pharnacy",
+        "address": "House-22, Road-4, Sector-13,uttara, Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "18",
+        "city": "Dhaka",
+        "area": "Uttara",
+        "storeName": "Green shed Super shop",
+        "address": "Sector-13, (12/13 mor), Uttara, Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "19",
+        "city": "Dhaka",
+        "area": "Uttara ",
+        "storeName": "Gayo hat organic shop",
+        "address": "House-41, Road-8, sector-13,Uttara,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "20",
+        "city": "Barishal ",
+        "area": "Charfashion",
+        "storeName": "Nur cap house",
+        "address": "Beside jacob tower,Charfasion.",
+        "action": ":"
+    },
+    {
+        "id": "21",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "22",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "23",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "24",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "25",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "26",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "27",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "28",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "29",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "30",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "31",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "32",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "33",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "34",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 02, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    },
+    {
+        "id": "35",
+        "city": "Dhaka",
+        "area": "Merul Badda",
+        "storeName": "Green life Pharmacy",
+        "address": "House 01, Road 12, DIT project, Merul badda,Dhaka",
+        "action": ":"
+    }
+]

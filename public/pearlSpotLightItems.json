@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "img": "./assets/images/pearlSpotLightItems/item-1.jpg",
+        "productName": "Pearl Henna Powder",
+        "productTitle": "Henna Powder",
+        "productDesc": "Pearl Henna Powder nourishes scalp & hair and acts as a good conditioner for hair to help it grow faster."
+    },
+    {
+        "id": 2,
+        "img": "./assets/images/pearlSpotLightItems/item-2.jpg",
+        "productName": "Pearl Shikakai Powder",
+        "productTitle": "Pearl Shikakai Powder",
+        "productDesc": "The antifungal properties of pearl shikakai powder nourishes scalp and prevents itching and dryness. The natural ingredients of shikakai make hair softer and add a beautiful shine to it."
+    },
+    {
+        "id": 3,
+        "img": "./assets/images/pearlSpotLightItems/item-3.jpg",
+        "productName": "Pearl Pomegranate Peel Powder",
+        "productTitle": "Pearl Pomegranate",
+        "productDesc": "Peel Powder protects against UVB rays and treats hyperpigmentation, acne, signs of aging, and wound healing."
+    }
+]

@@ -1,0 +1,121 @@
+.homeTabItemCard {
+    text-align: left;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.homeTabItemCard:hover {
+    outline: 1px solid #00a651;
+}
+
+.homeTabItemCardName {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-weight: 500;
+    height: 40px;
+}
+
+.discount-tag {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #e22a32;
+    margin-top: 45px;
+    width: 73px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.discount-tag-modal {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #e22a32;
+    margin-top: -22px;
+    width: 75px;
+    height: 25px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.homeTabItemCard-img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.homeTabItemCardPriceAndRating {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.homeTabItemCardPriceDiscounted {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    text-decoration: line-through;
+}
+
+.homeTabItemCardPriceDiscounted-modal {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    text-decoration: line-through;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.homeTabItemCardPrice {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-weight: bolder;
+    color: #00a651;
+}
+
+.homeTabItemCardPrice-modal {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    color: #00a651;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+.homeTabItemCardDesc-modal {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: gray;
+    text-align: justify;
+}
+
+
+.homeTabItemCardCartAndEye {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.home-cart-eye-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #00a651;
+    border-radius: 5px;
+    color: #00a651;
+    height: 50px;
+    width: 70px;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-carousel-btn {
+    background-color: #00a651;
+    margin: auto;
+    height: 40px;
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 1080px) {
+    .discount-tag {
+        margin-top: 70px;
+    }
+}

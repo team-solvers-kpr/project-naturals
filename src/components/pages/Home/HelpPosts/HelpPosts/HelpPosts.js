@@ -24,8 +24,8 @@ const HelpPosts = () => {
     return (
         <>
             <h2 className='text-center testimonial-title'><span className='testimonial-title-span'>Naturals Help</span> Post</h2>
-            <div className='container'>
-                <div className='row '>
+            <div className='container' >
+                <div className='row'>
 
                     {
                         posts.slice(0, visible).map(post => <SingleHelpPosts key={post.id} post={post} />)

@@ -1,0 +1,44 @@
+.footer-bg {
+    width: 100%;
+    height: 350px;
+}
+
+.footer-links {
+    position: absolute;
+    margin-top: -100px;
+    color: #ffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.footer-arrow {
+    display: none;
+    color: #00a651;
+    ;
+}
+
+.footer-link:hover .footer-arrow {
+    display: inline;
+    margin-right: 5px;
+}
+
+.footer-section {
+    background: #295746;
+    height: 1105px;
+}
+
+.footer-social-icon {
+    background-color: #295746;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .topIcon {
+        width: 100%;
+    }
+
+    .ssl {
+        width: 100%;
+    }
+}
