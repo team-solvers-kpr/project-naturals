@@ -9,11 +9,45 @@ import { AiFillEye } from '@react-icons/all-files/ai/AiFillEye';
 import { Modal } from 'react-bootstrap';
 import './HomeShopItem.css';
 import CounterButton from '../../../../shared/CounterButton/CounterButton';
-
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../../../../redux/cartSlice';
 
 
 const MyVerticallyCenteredModal = (props) => {
   const [amount, setAmount] = useState(0);
+  const id = props.shopitem.id;
+  const dispatch = useDispatch();
+
+  const {
+    itemName,
+    img1,
+    price
+  } = props.shopitem;
+
+
+
+  const add = () => {
+    if (amount === 0) {
+      window.alert("sorry!")
+    }
+    // create cart product
+    const cartProduct = {
+      id,
+      itemName,
+      img1,
+      price,
+      amount,
+      quantityPrice: price * amount,
+    };
+
+    // add the product to our cart in the store
+    dispatch(addToCart({ cartProduct }));
+
+    // show success message
+
+  };
+
+
   return (
     <Modal
       {...props}
@@ -109,7 +143,7 @@ const MyVerticallyCenteredModal = (props) => {
                     <CounterButton amount={amount} setAmount={setAmount} />
                   </div>
                   <div className="ms-3">
-                    <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
+                    <CustomButton onClick={add} title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
                   </div>
                 </div>
                 <hr />
