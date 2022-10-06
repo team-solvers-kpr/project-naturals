@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useLayoutEffect } from "react";
 import { Provider } from "react-redux";
 import store from './redux';
@@ -23,6 +23,9 @@ import Products from "./components/pages/All_Products/Products/Products/Products
 import SignUp from "./components/pages/Login_SignUp/SignUp/SignUp";
 import Login from "./components/pages/Login_SignUp/Login/Login";
 import ScrollToTop from "react-scroll-to-top";
+import useFirebase from "./Hooks/useFirebase";
+import AuthProvider from "./Context/AuthProvider";
+import loadingImg from './assests/loading/1.gif'
 
 
 const Wrapper = ({ children }) => {
@@ -35,36 +38,69 @@ const Wrapper = ({ children }) => {
 
 
 function App() {
+  const { user, loading } = useFirebase()
 
+  if (loading) {
+    return (
+      <>
+        <center>
+          <img src={loadingImg} alt="" className='loading-gif' />
+        </center>
+      </>
+    )
+  }
   return (
-    <Provider store={store}>
-      <Wrapper>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/pearl" element={<Pearl />} />
-          <Route path="/store" element={<FindStore />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/becomeawholesaler" element={<BecomeAWholesaler />} />
-          <Route path="/products/Honey&Dates" element={<HoneyAndDates />} />
-          <Route path="/products/FinestHerb" element={<FinestHerbs />} />
-          <Route path="/products/Nut&Seeds" element={<NutAndSeeds />} />
-          <Route path="/products/Pickles&Spices" element={<PicklesAndSpices />} />
-          <Route path="/products/Noboshokti" element={<Noboshoktis />} />
-          <Route path="/products/OrganicOil&Ghee" element={<OrganicOilAndGhees />} />
-          <Route path="/products/GiftCombo" element={<GiftCombos />} />
-          <Route path="/products/EnergyEssentials" element={<EnergyEssentials />} />
-          <Route path="/products/Hair&SkinCare" element={<HairAndSkinCares />} />
-          <Route path="/products" element={<Products />} />
-        </Routes>
-        <ScrollToTop color="#00a651" smooth viewBox="0 0 32 32"
-          svgPath="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"
-        />
-        <Footer />
-      </Wrapper>
-    </Provider>
+    <AuthProvider>
+      <Provider store={store}>
+        <Wrapper>
+          <Navbar />
+          <Routes>
+            {user ? (<>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/pearl" element={<Pearl />} />
+              <Route path="/store" element={<FindStore />} />
+              <Route path="/becomeawholesaler" element={<BecomeAWholesaler />} />
+              <Route path="/products/Honey&Dates" element={<HoneyAndDates />} />
+              <Route path="/products/FinestHerb" element={<FinestHerbs />} />
+              <Route path="/products/Nut&Seeds" element={<NutAndSeeds />} />
+              <Route path="/products/Pickles&Spices" element={<PicklesAndSpices />} />
+              <Route path="/products/Noboshokti" element={<Noboshoktis />} />
+              <Route path="/products/OrganicOil&Ghee" element={<OrganicOilAndGhees />} />
+              <Route path="/products/GiftCombo" element={<GiftCombos />} />
+              <Route path="/products/EnergyEssentials" element={<EnergyEssentials />} />
+              <Route path="/products/Hair&SkinCare" element={<HairAndSkinCares />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </>) :
+              (<>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/pearl" element={<Pearl />} />
+                <Route path="/store" element={<FindStore />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/becomeawholesaler" element={<BecomeAWholesaler />} />
+                <Route path="/products/Honey&Dates" element={<HoneyAndDates />} />
+                <Route path="/products/FinestHerb" element={<FinestHerbs />} />
+                <Route path="/products/Nut&Seeds" element={<NutAndSeeds />} />
+                <Route path="/products/Pickles&Spices" element={<PicklesAndSpices />} />
+                <Route path="/products/Noboshokti" element={<Noboshoktis />} />
+                <Route path="/products/OrganicOil&Ghee" element={<OrganicOilAndGhees />} />
+                <Route path="/products/GiftCombo" element={<GiftCombos />} />
+                <Route path="/products/EnergyEssentials" element={<EnergyEssentials />} />
+                <Route path="/products/Hair&SkinCare" element={<HairAndSkinCares />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </>)}
+          </Routes>
+          <ScrollToTop color="#00a651" smooth viewBox="0 0 32 32"
+            svgPath="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"
+          />
+          <Footer />
+        </Wrapper>
+      </Provider>
+    </AuthProvider>
   );
 }
 

@@ -24,6 +24,40 @@
     border-radius: 0px 5px 5px 0px;
 }
 
+.cart-added-tag {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #00a651;
+    margin-top: -12px;
+    width: 115px;
+    height: 25px;
+    border-radius: 0px 0px 0px 0px;
+    color: #ffffff;
+}
+
+.cart-added-tag-1-modal {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #00a651;
+    margin-top: -22px;
+    width: 115px;
+    height: 25px;
+    border-radius: 0px 0px 0px 0px;
+    color: #ffffff;
+}
+
+.cart-added-tag-2-modal {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #00a651;
+    margin-top: -22px;
+    width: 115px;
+    height: 25px;
+    border-radius: 0px 0px 0px 0px;
+    color: #ffffff;
+    margin-left: 75px;
+}
+
 .discount-tag-modal {
     position: absolute;
     font-family: 'Source Sans Pro', sans-serif;
