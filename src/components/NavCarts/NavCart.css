@@ -1,0 +1,39 @@
+.navCartImg {
+    height: 90px;
+    width: 90px;
+    padding-right: 10px;
+}
+
+.navCartName {
+    font-size: 12px;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    height: 30px;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+.navCartNameAndItemDel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navItemDel {
+    margin-right: 20px;
+    font-size: 30px;
+
+}
+
+.navCartPrice {
+    font-size: 12px;
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.navCounterBtnAndPrice {
+    display: flex;
+    font-size: 14px;
+}
+
+.navCounterPrice {
+    color: #00a651;
+    font-weight: bolder;
+}

@@ -7,13 +7,23 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { BrowserRouter } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
+import { persistStore } from 'redux-persist'
+import store from './redux/store';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react'
 AOS.init();
+
+let persistor = persistStore(store)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <App />
+        </PersistGate>
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

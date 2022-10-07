@@ -3,30 +3,44 @@ import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
 import { SiFacebook } from '@react-icons/all-files/si/SiFacebook';
 import React from 'react';
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import login from '../../../../assests/login-signup/login.png'
 import CustomButton from '../../../shared/CustomButton/CustomButton';
 import './Login.css';
-import useFirebase from '../../../../Hooks/useFirebase';
+import loadingGif from "../../../../assests/loading/2.gif";
+import useAuth from '../../../../Hooks/useAuth';
+import { ToastContainer } from 'react-toastify';
+
 
 const Login = () => {
-    const location = useLocation();
+    const { signInWithGoogle, loginUser, loading } = useAuth();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    const { signInWithGoogle } = useFirebase();
+    const handleEmail = event => {
+        const result = event.target.value;
+        setEmail(result)
+    }
+    const handlePassword = event => {
+        const result = event.target.value;
+        setPassword(result)
+    }
 
+    const handleRegistration = e => {
+        e.preventDefault()
+        loginUser(email, password)
+    }
     const [passwordShown, setPasswordShown] = useState(false);
     const togglePassword = () => {
         setPasswordShown(!passwordShown);
     };
 
-
-
     const handleGoogleSignIn = () => {
-        signInWithGoogle(location)
+        signInWithGoogle()
     }
 
     return (
-        <div>
+        <div >
             <div className="container login-container mt-5">
                 <img className='loginPage-img' src={login} alt="" />
                 <div className="col-md-12 col-lg-4 col-xl-4 offset-xl-1">
@@ -34,16 +48,16 @@ const Login = () => {
                     <div className="divider d-flex align-items-center my-4">
                         <h1 className="text-center fw-bold mb-0">Login</h1>
                     </div>
-                    <form >
+                    <form onSubmit={handleRegistration}>
 
                         <div className="form-outline">
 
-                            <input type="email" id="form3Example3" className="form-control form-control-lg mb-2"
+                            <input type="email" id="form3Example3" className="form-control form-control-lg mb-2" onChange={handleEmail} required
                                 placeholder="Your Email" />
                         </div>
 
                         <div className="form-outline mb-3">
-                            <input type={passwordShown ? "text" : "password"} className="form-control form-control-lg mb-2"
+                            <input type={passwordShown ? "text" : "password"} className="form-control form-control-lg mb-2" onChange={handlePassword} required
                                 placeholder="Enter a password" />
 
                             <input className="form-check-input me-2" type="checkbox" value="" id="form2Example3" onClick={togglePassword} />
@@ -51,14 +65,15 @@ const Login = () => {
                                 Show Password
                             </label>
                         </div>
+                        <div className="text-center text-lg-start mt-4 pt-2">
+                            {
+                                loading ? (<><img height="50" className='ms-4' src={loadingGif} alt="" /></>) : (<>  <CustomButton title="Login" backgroundColor=" #00a651" color="#ffffff" border="2px solid #00a651" /></>)
+                            }
+                            <p className="small fw-bold mt-4 pt-1 mb-0">Create an account<Link to='/signup'
+                                className="link-success ms-1">Sign up Here</Link>
+                            </p>
+                        </div>
                     </form>
-
-                    <div className="text-center text-lg-start mt-4 pt-2">
-                        <CustomButton title="Login" backgroundColor=" #00a651" color="#ffffff" border="2px solid #00a651" />
-                        <p className="small fw-bold mt-4 pt-1 mb-0">Create an account<Link to='/signup'
-                            className="link-success ms-1">Sign up Here</Link>
-                        </p>
-                    </div>
 
 
                     <br />
@@ -81,6 +96,8 @@ const Login = () => {
                                 style={{ fontSize: "30px", color: "white" }} />
                         </button>
                     </div>
+                    <ToastContainer />
+
                 </div>
             </div>
         </div>

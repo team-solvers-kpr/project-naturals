@@ -28,6 +28,11 @@
     margin-top: 6px;
 }
 
+.cartAndProfileIcon {
+    display: flex;
+    align-items: center;
+}
+
 .shoppingCart-icon {
     margin-top: 10px;
     margin-left: 10px;
@@ -49,24 +54,88 @@
 
 .dropdown-menu {
     color: rgb(0, 0, 0);
-    padding-left: 10px;
+    /* padding-left: 10px;
     max-height: 400px;
-    overflow-y: auto;
+    overflow-y: auto; */
     width: 300px;
     border-radius: 0;
+    padding: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
 }
 
-.profileDropdown {
-    width: 100px;
+.navCartDropdown {
+    padding-left: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.navCartRemoveAllBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: -10px;
+    text-decoration: underline;
+    color: blue;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.navCartRemoveAllBtn {
     cursor: pointer;
 }
 
-.dropdown-item:active {
-    background-color: #00a651;
+.navSubtotalContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
+.navSubtotal {
+    padding-left: 10px;
+    font-weight: bolder;
+}
 
+.navSubtotalAmount {
+    padding-right: 10px;
+    color: #00a651;
+}
 
+.navViewCartCheckoutContainer {
+    background-color: #00a651;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin: 0;
+}
+
+.navViewCartBtn {
+    background-color: #00a651;
+    border: 1px solid #eeee;
+    width: 170px;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.navViewCartBtn:hover {
+    background-color: #ffff;
+    color: #00a651;
+}
+
+.navCheckoutBtn {
+    background-color: #00a651;
+    border: 1px solid #eeee;
+    width: 170px;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.navCheckoutBtn:hover {
+    background-color: #ffff;
+    color: #00a651;
+}
 
 .signup-signin-btn {
     display: flex;
@@ -77,6 +146,21 @@
     padding: 5px;
     border-radius: 5px;
     width: 200px;
+    height: 50px;
+}
+
+.profileIcon {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.profileDropdown {
+    width: 100px;
+    cursor: pointer;
+}
+
+.dropdown-item:active {
+    background-color: #00a651;
 }
 
 
@@ -101,13 +185,28 @@
     }
 
     .shoppingCart-icon {
-        margin-left: 0px;
+        margin-left: -10px;
     }
-
 
     .signup-signin-btn {
         margin: 0;
         margin-left: 10px;
         width: 150px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .cartAndProfileIcon {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profileIcon {
+        margin: 0;
+    }
+
+    .signup-signin-btn {
+        margin: 0;
+
     }
 }
