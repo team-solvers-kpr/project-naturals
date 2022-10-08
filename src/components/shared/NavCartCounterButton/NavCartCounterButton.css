@@ -1,0 +1,40 @@
+.NavCounterBtn {
+    border: 2px solid #eeeeee;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.NavIncrementBtn {
+    margin-left: 2px;
+    font-weight: bolder;
+}
+
+.NavBtn {
+    border: none;
+}
+
+.NavBtn:hover {
+    color: #00a651;
+}
+
+
+.NavDecrementBtn {
+    margin-right: 15px;
+    font-weight: bolder;
+}
+
+.NavIncrementBtn {
+    margin-left: 15px;
+    font-weight: bolder;
+}

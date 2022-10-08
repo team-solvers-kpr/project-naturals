@@ -1,0 +1,31 @@
+.spotLight-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+}
+
+.spotLight-2-textBox {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #efefef;
+    padding: 40px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .spotLight-2 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .spotLight-2 {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .spotLight-2-img img {
+        width: 100%;
+    }
+}

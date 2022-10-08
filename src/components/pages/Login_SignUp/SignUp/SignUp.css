@@ -1,0 +1,39 @@
+.signup-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form-control:focus {
+    border-color: #00a651;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: #00a651 !important;
+    border: 0;
+}
+
+.form-check-input:focus,
+.label::after,
+label.form-check-label:focus,
+.form-check-input::after,
+.form-check-input:not(:disabled):not(.disabled):active:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 0 1px #00a651 !important;
+}
+
+@media screen and (max-width: 1080px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .signupPage-img {
+        width: 80%;
+    }
+
+}

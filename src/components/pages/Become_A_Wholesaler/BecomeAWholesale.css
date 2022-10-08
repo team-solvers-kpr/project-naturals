@@ -1,0 +1,78 @@
+.breadcrumb {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.breadcrumb-item {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: black
+}
+
+.breadcrumb-item:hover {
+    color: #00a651;
+}
+
+.breadcrumb-item-active {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #00a651;
+    cursor: default;
+}
+
+.breadcrumb-item-active:hover {
+    cursor: text;
+    color: #00a651;
+}
+
+.wholesaler-title-div {
+    background-color: #fafafa;
+    padding: 30px 30px 20px 20px;
+}
+
+.wholesaler-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    order: 1;
+    text-transform: capitalize;
+    margin-bottom: 0.3em;
+}
+
+.wholesalerFormTitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #777777;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.wholesalerFormInput {
+    padding: 0.5em;
+    order: 2;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.wholesalerFormInput:focus {
+    border: 1px solid #000000 !important;
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
