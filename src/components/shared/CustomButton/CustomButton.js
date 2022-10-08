@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CustomButton = ({ title, icon, backgroundColor, color, border }) => {
+const CustomButton = ({ title, icon, backgroundColor, color, border, onClick, type }) => {
     return (
         <>
             <button style={{
@@ -15,7 +15,7 @@ const CustomButton = ({ title, icon, backgroundColor, color, border }) => {
                 fontSize: "16px",
                 width: "140px",
                 height: "50px",
-            }} ><span style={{ fontSize: "22px" }} > {icon}</span>{title}<span></span></button>
+            }} onClick={onClick} type={type}><span style={{ fontSize: "22px" }} > {icon}</span>{title}<span></span></button>
         </>
     );
 };

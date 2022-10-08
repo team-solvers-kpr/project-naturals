@@ -61,7 +61,7 @@ label {
 }
 
 .wholesalerFormInput:focus {
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
     box-shadow: none;
     outline-offset: 0px;
     outline: none;

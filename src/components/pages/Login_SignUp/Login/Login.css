@@ -1,0 +1,20 @@
+.login-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 509px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .login-container {
+        flex-direction: column;
+        height: 774px;
+    }
+
+    .loginPage-img {
+        width: 80%;
+    }
+
+}
