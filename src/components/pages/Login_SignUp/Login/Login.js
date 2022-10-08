@@ -9,7 +9,8 @@ import CustomButton from '../../../shared/CustomButton/CustomButton';
 import './Login.css';
 import loadingGif from "../../../../assests/loading/2.gif";
 import useAuth from '../../../../Hooks/useAuth';
-import { ToastContainer } from 'react-toastify';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 const Login = () => {
@@ -40,7 +41,11 @@ const Login = () => {
     }
 
     return (
-        <div >
+        <HelmetProvider>
+            <Helmet>
+                <title>Login: Naturals</title>
+            </Helmet>
+
             <div className="container login-container mt-5">
                 <img className='loginPage-img' src={login} alt="" />
                 <div className="col-md-12 col-lg-4 col-xl-4 offset-xl-1">
@@ -96,11 +101,9 @@ const Login = () => {
                                 style={{ fontSize: "30px", color: "white" }} />
                         </button>
                     </div>
-                    <ToastContainer />
-
                 </div>
             </div>
-        </div>
+        </HelmetProvider>
     );
 };
 

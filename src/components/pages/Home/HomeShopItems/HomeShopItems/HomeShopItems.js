@@ -117,7 +117,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/Honey&Dates">
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Honey&Dates">
                             <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
@@ -130,7 +130,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/FinestHerb"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/FinestHerb"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
 
@@ -142,7 +142,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/Nut&Seeds">
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Nut&Seeds">
                             <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
@@ -155,7 +155,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/Pickles&Spices">
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Pickles&Spices">
                             <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
@@ -167,7 +167,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/Noboshokti"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Noboshokti"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                     <TabPanel className='homeTabItems'>
@@ -178,7 +178,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/OrganicOil&Ghee"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/OrganicOil&Ghee"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                     <TabPanel className='homeTabItems'>
@@ -190,7 +190,7 @@ const HomeShopItems = () => {
                             }
                         </div>
 
-                        <Link style={{ textDecoration: "none" }} to="/products/GiftCombo"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/GiftCombo"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                     <TabPanel className='homeTabItems'>
@@ -201,7 +201,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/EnergyEssentials"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/EnergyEssentials"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                     <TabPanel className='homeTabItems'>
@@ -212,7 +212,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products/Hair&SkinCare"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Hair&SkinCare"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                     <TabPanel className='homeTabItems' >
@@ -224,7 +224,7 @@ const HomeShopItems = () => {
                                 )
                             }
                         </div>
-                        <Link style={{ textDecoration: "none" }} to="/products"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                         </Link>
                     </TabPanel>
                 </Tabs>

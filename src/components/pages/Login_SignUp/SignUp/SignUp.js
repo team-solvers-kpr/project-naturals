@@ -8,8 +8,8 @@ import signup from '../../../../assests/login-signup/signup.png'
 import './SignUp.css';
 import CustomButton from '../../../shared/CustomButton/CustomButton';
 import useAuth from '../../../../Hooks/useAuth';
-import { ToastContainer } from 'react-toastify';
 import loadingGif from "../../../../assests/loading/2.gif";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const SignUp = () => {
     const { signInWithGoogle, registerUser, loading } = useAuth();
@@ -49,7 +49,10 @@ const SignUp = () => {
 
 
     return (
-        <div >
+        <HelmetProvider>
+            <Helmet>
+                <title>Sign Up: Naturals</title>
+            </Helmet>
             <div className="container signup-container mt-5">
                 <img className='signupPage-img' src={signup} alt="" />
                 <div className="col-md-12 col-lg-4 col-xl-4 offset-xl-1">
@@ -106,13 +109,12 @@ const SignUp = () => {
                                 style={{ fontSize: "30px", color: "white" }} />
                         </button>
                     </div>
-                    <ToastContainer />
                 </div>
             </div>
 
 
 
-        </div >
+        </HelmetProvider >
     );
 };
 

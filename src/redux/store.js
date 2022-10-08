@@ -20,7 +20,12 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 // 2. create store
 const store = configureStore({
-    reducer: persistedReducer
+    reducer: persistedReducer,
+    middleware: getDefaultMiddleware =>
+        getDefaultMiddleware({
+            serializableCheck: false,
+        }),
 })
+
 setupListeners(store.dispatch)
 export default store
