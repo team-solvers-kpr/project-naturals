@@ -9,11 +9,48 @@ import { AiFillEye } from '@react-icons/all-files/ai/AiFillEye';
 import { Modal } from 'react-bootstrap';
 import './HomeShopItem.css';
 import CounterButton from '../../../../shared/CounterButton/CounterButton';
-
-
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, selectCart } from '../../../../../redux/cartSlice';
+import { toast } from 'react-toastify';
 
 const MyVerticallyCenteredModal = (props) => {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
+  const id = props.shopitem.id;
+  const dispatch = useDispatch();
+
+  const {
+    itemName,
+    img1,
+    price,
+    discount,
+    discountPrice
+  } = props.shopitem;
+
+
+
+  const add = () => {
+
+
+    // create cart product
+    const cartProduct = {
+      id,
+      itemName,
+      img1,
+      price,
+      discount,
+      amount,
+      quantityPrice: Math.round(price - (price * discount / 100)) * amount,
+      discountPrice
+    };
+
+    // add the product to our cart in the store
+    dispatch(addToCart({ cartProduct }));
+
+    // show success message
+    toast.success(`${itemName} সফলভাবে কার্টে যোগ করা হয়েছে`)
+  };
+  const cart = useSelector(selectCart);
+
   return (
     <Modal
       {...props}
@@ -34,6 +71,28 @@ const MyVerticallyCenteredModal = (props) => {
                     <span className='ps-2'>{props.shopitem.discount}% off</span>
 
                   </div>
+                ) :
+                  (
+                    <>
+                      {
+                        cart.find(element => element.id === id) ? (<div className='cart-added-tag-1-modal'>
+                          <span className='ps-2'>Added to Cart</span>
+                        </div>) : (<>
+                        </>)
+                      }
+                    </>
+                  )
+              }
+              {
+                props.shopitem.discount > 0 ? (
+                  <>
+                    {
+                      cart.find(element => element.id === id) ? (<div className='cart-added-tag-2-modal'>
+                        <span className='ps-2'>Added to Cart</span>
+                      </div>) : (<>
+                      </>)
+                    }
+                  </>
                 ) :
                   (
                     <>
@@ -109,7 +168,9 @@ const MyVerticallyCenteredModal = (props) => {
                     <CounterButton amount={amount} setAmount={setAmount} />
                   </div>
                   <div className="ms-3">
-                    <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
+
+                    <CustomButton onClick={add} title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
+
                   </div>
                 </div>
                 <hr />
@@ -117,6 +178,7 @@ const MyVerticallyCenteredModal = (props) => {
               </div>
             </div>
           </div>
+
         </div>
       </Modal.Body>
 
@@ -135,9 +197,34 @@ const HomeShopItem = ({ shopItem }) => {
   const HoverOut = () => {
     setHover(img1)
   }
+  const cart = useSelector(selectCart);
+  const amount = 1;
+  const id = shopItem.id;
+  const dispatch = useDispatch();
 
+  const add = () => {
+
+    // create cart product
+    const cartProduct = {
+      id,
+      itemName,
+      img1,
+      price,
+      discount,
+      amount,
+      quantityPrice: Math.round(price - (price * discount / 100)) * amount,
+    };
+
+    // add the product to our cart in the store
+    dispatch(addToCart({ cartProduct }));
+
+    // show success message
+    toast.success(`${itemName} সফলভাবে কার্টে যোগ করা হয়েছে`)
+  };
   return (
     <div className="col-md-6 col-xl-3">
+
+
       <div className="card mb-4 homeTabItemCard">
         {
           discount > 0 ? (
@@ -146,6 +233,12 @@ const HomeShopItem = ({ shopItem }) => {
             </div>
           ) : <>
           </>
+        }
+        {
+          cart.find(element => element.id === id) ? (<div className='cart-added-tag'>
+            <span className='ps-2'>Added to Cart</span>
+          </div>) : (<>
+          </>)
         }
         {img1 && img2 ? (
           <img
@@ -210,7 +303,9 @@ const HomeShopItem = ({ shopItem }) => {
             </div>
           </div>
           <div className='homeTabItemCardCartAndEye'>
-            <CustomButton title="Add to Cart" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />
+            {
+              cart.find(element => element.id === id) ? (<CustomButton title="VIEW CART" backgroundColor=" #00a651" color="#ffff" border="2px solid #00a651" />) : (<CustomButton onClick={add} title="ADD TO CART" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />)
+            }
 
             <div className='home-cart-eye-div' onClick={() => setModalShow(true)} >
               <AiFillEye style={{ fontSize: "25px", }} />
@@ -223,7 +318,6 @@ const HomeShopItem = ({ shopItem }) => {
             />
           </div>
         </div>
-
       </div>
     </div>
 

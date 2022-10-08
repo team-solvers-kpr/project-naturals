@@ -19,7 +19,7 @@ const Footer = () => {
     const year = today.getFullYear();
 
     return (
-        <div>
+        <div className='footer'>
             <div>
                 <img src={bg} alt="" className='footer-bg' />
                 <center className='container footer-links'>

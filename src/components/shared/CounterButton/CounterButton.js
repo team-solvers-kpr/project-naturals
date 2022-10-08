@@ -1,13 +1,14 @@
 import React from 'react';
 import './CounterButton.css';
 
-const CounterButton = ({ style, amount, setAmount }) => {
+const CounterButton = ({ amount, setAmount }) => {
+    // const [count, setCount] = useState(initialVal || 0);
     const onIncrement = () => {
         // setCount((prev) => prev + 1);
         setAmount(amount + 1);
     };
     const onDecrement = () => {
-        if (amount > 0) {
+        if (amount > 1) {
             // setCount((prev) => prev - 1);
             setAmount(amount - 1);
         }
