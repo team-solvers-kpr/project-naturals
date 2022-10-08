@@ -164,7 +164,7 @@ const Navbar = () => {
                             </ul>
                         </>) : (
                             <>
-                                {user ? (<>
+                                {user && user.emailVerified ? (<>
 
                                     <div className="nav-item dropdown profileIcon">
 

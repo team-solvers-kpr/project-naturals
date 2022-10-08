@@ -1,4 +1,4 @@
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, signOut } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, updateProfile, signOut, sendEmailVerification } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -12,9 +12,8 @@ export const auth = getAuth(initializeFirebase())
 const useFirebase = () => {
     const [user, setUser] = useState();
     const [loading, setLoading] = useState(true)
-    const [authError, setAuthError] = useState('');
     const auth = getAuth();
-
+    console.log(user)
     // Google Sign Up
     const signInWithGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
@@ -48,12 +47,17 @@ const useFirebase = () => {
                     displayName: name,
 
                 }).then(() => {
-                    swal({
-                        title: "Account Created",
-                        text: "",
-                        icon: "success",
-                        button: "OK",
-                    });
+                    sendEmailVerification(auth.currentUser)
+                        .then(() => {
+                            swal({
+                                title: "Account Created",
+                                text: "Please check your email spam folder for verification link!",
+                                icon: "success",
+                                button: "OK",
+                            });
+
+                        });
+                    setLoading(false)
                 }).catch((error) => {
                     toast.error(error.message, {
                         icon: "😔"
@@ -72,18 +76,27 @@ const useFirebase = () => {
     // Login User By Email
     const loginUser = (email, password) => {
         setLoading(true)
+        signOut(auth)
+
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                swal({
-                    title: "Successfully Logged In",
-                    text: "",
-                    icon: "success",
-                    button: "OK",
-                });
-                setAuthError("");
+
+                if (userCredential.user.emailVerified) {
+                    swal({
+                        title: "Well Done",
+                        text: "Successfully logged in by Email!",
+                        icon: "success",
+                        button: "OK",
+                    });
+
+                }
+                else {
+                    toast.error("Yor email is not verified! please check your spam folder for verify this email", {
+                        icon: "😔"
+                    })
+                }
             })
             .catch((error) => {
-
                 toast.error(error.message, {
                     icon: "😔"
                 });
@@ -119,7 +132,6 @@ const useFirebase = () => {
     return {
         user,
         loading,
-        authError,
         signInWithGoogle,
         registerUser,
         loginUser,

@@ -2,14 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart, deleteFromCart } from '../../redux/cartSlice';
 import NavCartCounterButton from '../shared/NavCartCounterButton/NavCartCounterButton';
-import { MdCancel } from "@react-icons/all-files/md/MdCancel";
-
+import cancel from '../../assests/nav/cancel.png'
 import './NavCart.css';
 import swal from 'sweetalert';
 import { toast } from 'react-toastify';
 
 const Cart = (item) => {
-    const { itemName, img1, price, amount, discount, id } = item.item
+    const { itemName, img1, price, amount, discount } = item.item
     const dispatch = useDispatch();
 
     const onAmountChange = (value, cartItem) => {
@@ -53,7 +52,7 @@ const Cart = (item) => {
                 <div>
                     <div className='navCartNameAndItemDel'>
                         <span className='navCartName'>{itemName}</span>
-                        <MdCancel onClick={() => handleDelFromCart(item.item)} className='navItemDel' />
+                        <img src={cancel} alt="" onClick={() => handleDelFromCart(item.item)} size={30} className='navItemDel' />
                     </div>
 
                     {

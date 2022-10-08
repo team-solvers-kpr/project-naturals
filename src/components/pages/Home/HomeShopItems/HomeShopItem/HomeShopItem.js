@@ -11,7 +11,7 @@ import './HomeShopItem.css';
 import CounterButton from '../../../../shared/CounterButton/CounterButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, selectCart } from '../../../../../redux/cartSlice';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const MyVerticallyCenteredModal = (props) => {
   const [amount, setAmount] = useState(1);
@@ -223,7 +223,7 @@ const HomeShopItem = ({ shopItem }) => {
   };
   return (
     <div className="col-md-6 col-xl-3">
-      <ToastContainer position="bottom-right" pauseOnHover />
+
 
       <div className="card mb-4 homeTabItemCard">
         {
