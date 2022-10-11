@@ -38,7 +38,7 @@ const Navbar = () => {
                 switch (value) {
                     case "catch":
                         dispatch(reset())
-                        toast.warning("কার্টের সকল আইটেম সফল্ভাবে রিমুভ করা হয়েছে")
+                        toast.warning("কার্টের সকল আইটেম সফলভাবে রিমুভ করা হয়েছে")
                         break;
                     default: ;
                 }

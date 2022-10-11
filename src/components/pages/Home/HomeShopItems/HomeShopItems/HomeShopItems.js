@@ -18,7 +18,7 @@ import { Link } from 'react-router-dom';
 const HomeShopItems = () => {
     const [shopItems, setShopItems] = useState([])
     useEffect(() => {
-        fetch('HomeShopItems.json')
+        fetch('http://localhost:5000/allNaturalsProducts')
             .then(res => res.json())
             .then(data => setShopItems(data))
     }, [])

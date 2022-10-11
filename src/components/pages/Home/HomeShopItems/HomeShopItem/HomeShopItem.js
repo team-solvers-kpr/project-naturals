@@ -23,7 +23,6 @@ const MyVerticallyCenteredModal = (props) => {
     img1,
     price,
     discount,
-    discountPrice
   } = props.shopitem;
 
 
@@ -39,8 +38,7 @@ const MyVerticallyCenteredModal = (props) => {
       price,
       discount,
       amount,
-      quantityPrice: Math.round(price - (price * discount / 100)) * amount,
-      discountPrice
+      quantityPrice: Math.round(price - (price * discount / 100)) * amount
     };
 
     // add the product to our cart in the store
