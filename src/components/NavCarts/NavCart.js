@@ -35,7 +35,7 @@ const Cart = (item) => {
             .then((value) => {
                 switch (value) {
                     case "catch":
-                        dispatch(deleteFromCart({ id: cartItem.id }))
+                        dispatch(deleteFromCart({ _id: cartItem._id }))
                         toast.warning(`${itemName} কার্ট থেকে রিমুভ করা হয়েছে`)
                         break;
                     default: ;

@@ -163,6 +163,16 @@
     background-color: #00a651;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
 
 @media screen and (max-width: 1250px) {
     .nav-logo {

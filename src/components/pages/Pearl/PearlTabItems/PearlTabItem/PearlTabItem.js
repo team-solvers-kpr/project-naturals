@@ -19,7 +19,7 @@ import { toast } from 'react-toastify';
 const MyVerticallyCenteredModal = (props) => {
     const [amount, setAmount] = useState(1);
     const cart = useSelector(selectCart);
-    const id = props.pearlitem.id;
+    const _id = props.pearlitem._id;
     const dispatch = useDispatch();
     const {
         img1, itemName, price, discount,
@@ -31,7 +31,7 @@ const MyVerticallyCenteredModal = (props) => {
 
         // create cart product
         const cartProduct = {
-            id,
+            _id,
             itemName,
             img1,
             price,
@@ -72,7 +72,7 @@ const MyVerticallyCenteredModal = (props) => {
                                     (
                                         <>
                                             {
-                                                cart.find(element => element.id === id) ? (<div className='cart-added-tag-1-modal'>
+                                                cart.find(element => element._id === _id) ? (<div className='cart-added-tag-1-modal'>
                                                     <span className='ps-2'>Added to Cart</span>
                                                 </div>) : (<>
                                                 </>)
@@ -84,7 +84,7 @@ const MyVerticallyCenteredModal = (props) => {
                                 props.pearlitem.discount > 0 ? (
                                     <>
                                         {
-                                            cart.find(element => element.id === id) ? (<div className='cart-added-tag-2-modal'>
+                                            cart.find(element => element._id === _id) ? (<div className='cart-added-tag-2-modal'>
                                                 <span className='ps-2'>Added to Cart</span>
                                             </div>) : (<>
                                             </>)
@@ -145,13 +145,13 @@ const PearlTabItem = ({ pearlItem }) => {
 
     const cart = useSelector(selectCart);
     const amount = 1;
-    const id = pearlItem.id;
+    const _id = pearlItem._id;
     const dispatch = useDispatch();
 
     const add = () => {
         // create cart product
         const cartProduct = {
-            id,
+            _id,
             itemName,
             img1,
             price,
@@ -178,7 +178,7 @@ const PearlTabItem = ({ pearlItem }) => {
                     </>
                 }
                 {
-                    cart.find(element => element.id === id) ? (<div className='cart-added-tag'>
+                    cart.find(element => element._id === _id) ? (<div className='cart-added-tag'>
                         <span className='ps-2'>Added to Cart</span>
                     </div>) : (<>
                     </>)
@@ -223,7 +223,7 @@ const PearlTabItem = ({ pearlItem }) => {
                     </div>
                     <div className='pearlTabItemCardCartAndEye'>
                         {
-                            cart.find(element => element.id === id) ? (<CustomButton title="VIEW CART" backgroundColor=" #00a651" color="#ffff" border="2px solid #00a651" />) : (<CustomButton onClick={add} title="ADD TO CART" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />)
+                            cart.find(element => element._id === _id) ? (<CustomButton title="VIEW CART" backgroundColor=" #00a651" color="#ffff" border="2px solid #00a651" />) : (<CustomButton onClick={add} title="ADD TO CART" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />)
                         }
 
                         <div className='pearl-cart-eye-div' onClick={() => setModalShow(true)} >

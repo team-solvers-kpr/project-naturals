@@ -3,6 +3,7 @@ import navIcon from '../../../assests/nav/nav.png';
 import './Navbar.css';
 import { FiSearch } from "@react-icons/all-files/fi/FiSearch";
 import { IoCartOutline } from "@react-icons/all-files/io5/IoCartOutline";
+import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight";
 import { FiLogOut } from "@react-icons/all-files/fi/FiLogOut";
 import { CgProfile } from "@react-icons/all-files/cg/CgProfile";
@@ -23,6 +24,7 @@ const Navbar = () => {
     const cartItems = useSelector(selectTotalItems);
     const totalAmount = useSelector(selectTotalAmount);
     const dispatch = useDispatch();
+
     const handleRemoveAll = () => {
 
         swal("Cart Items Remove Warning!", "Do you really want to remove all items?", "warning", {
@@ -76,8 +78,9 @@ const Navbar = () => {
                 <Link to="/" className="navbar-brand" aria-current="page"><img src={navIcon} alt="" className='nav-logo' /></Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <GiHamburgerMenu />
                 </button>
+
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 mb-lg-0">
                         <NavLink to="/home" className="nav-link" >HOME</NavLink>

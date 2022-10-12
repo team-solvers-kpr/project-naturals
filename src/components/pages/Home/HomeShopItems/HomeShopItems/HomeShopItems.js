@@ -113,7 +113,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="3000"  >
                             {
                                 shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -126,7 +126,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Finest Herb").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -138,7 +138,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Nut & Seeds").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -151,7 +151,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Pickles & Spices").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -163,7 +163,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Noboshokti").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -174,7 +174,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Organic Oil & Ghee").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>
@@ -185,7 +185,7 @@ const HomeShopItems = () => {
                         <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
                             {
                                 shopItems.filter(category => category.category === "Gift Combo").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
+                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
                                 )
                             }
                         </div>

@@ -13,7 +13,7 @@ const PearlItemsTab = () => {
 
     const [pearlItems, setPearlItems] = useState([])
     useEffect(() => {
-        fetch('PearlTabItems.json')
+        fetch('http://localhost:5000/pearlProducts')
             .then(res => res.json())
             .then(data => setPearlItems
                 (data))

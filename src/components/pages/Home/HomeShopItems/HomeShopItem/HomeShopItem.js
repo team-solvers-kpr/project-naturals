@@ -15,7 +15,7 @@ import { toast } from 'react-toastify';
 
 const MyVerticallyCenteredModal = (props) => {
   const [amount, setAmount] = useState(1);
-  const id = props.shopitem.id;
+  const _id = props.shopitem._id;
   const dispatch = useDispatch();
 
   const {
@@ -32,7 +32,7 @@ const MyVerticallyCenteredModal = (props) => {
 
     // create cart product
     const cartProduct = {
-      id,
+      _id,
       itemName,
       img1,
       price,
@@ -73,7 +73,7 @@ const MyVerticallyCenteredModal = (props) => {
                   (
                     <>
                       {
-                        cart.find(element => element.id === id) ? (<div className='cart-added-tag-1-modal'>
+                        cart.find(element => element._id === _id) ? (<div className='cart-added-tag-1-modal'>
                           <span className='ps-2'>Added to Cart</span>
                         </div>) : (<>
                         </>)
@@ -85,7 +85,7 @@ const MyVerticallyCenteredModal = (props) => {
                 props.shopitem.discount > 0 ? (
                   <>
                     {
-                      cart.find(element => element.id === id) ? (<div className='cart-added-tag-2-modal'>
+                      cart.find(element => element._id === _id) ? (<div className='cart-added-tag-2-modal'>
                         <span className='ps-2'>Added to Cart</span>
                       </div>) : (<>
                       </>)
@@ -197,14 +197,14 @@ const HomeShopItem = ({ shopItem }) => {
   }
   const cart = useSelector(selectCart);
   const amount = 1;
-  const id = shopItem.id;
+  const _id = shopItem._id;
   const dispatch = useDispatch();
 
   const add = () => {
 
     // create cart product
     const cartProduct = {
-      id,
+      _id,
       itemName,
       img1,
       price,
@@ -233,7 +233,7 @@ const HomeShopItem = ({ shopItem }) => {
           </>
         }
         {
-          cart.find(element => element.id === id) ? (<div className='cart-added-tag'>
+          cart.find(element => element._id === _id) ? (<div className='cart-added-tag'>
             <span className='ps-2'>Added to Cart</span>
           </div>) : (<>
           </>)
@@ -302,7 +302,7 @@ const HomeShopItem = ({ shopItem }) => {
           </div>
           <div className='homeTabItemCardCartAndEye'>
             {
-              cart.find(element => element.id === id) ? (<CustomButton title="VIEW CART" backgroundColor=" #00a651" color="#ffff" border="2px solid #00a651" />) : (<CustomButton onClick={add} title="ADD TO CART" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />)
+              cart.find(element => element._id === _id) ? (<CustomButton title="VIEW CART" backgroundColor=" #00a651" color="#ffff" border="2px solid #00a651" />) : (<CustomButton onClick={add} title="ADD TO CART" backgroundColor=" #ffffff" color="#00a651" border="2px solid #00a651" icon={<IoCartOutline />} />)
             }
 
             <div className='home-cart-eye-div' onClick={() => setModalShow(true)} >
