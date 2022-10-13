@@ -14,11 +14,12 @@ import icon8 from '../../../../../assests/shopItem/Energy-Essentials.jpeg'
 import icon9 from '../../../../../assests/shopItem/Hair-Skin-care-2.jpeg'
 import icon10 from '../../../../../assests/shopItem/All-Natural.jpeg'
 import { Link } from 'react-router-dom';
+import LoadingCards from '../../../../shared/LoadingCards/LoadingCards';
 
 const HomeShopItems = () => {
     const [shopItems, setShopItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allNaturalsProducts')
+        fetch('http://localhost:5000/allNaturalProducts')
             .then(res => res.json())
             .then(data => setShopItems(data))
     }, [])
@@ -108,125 +109,130 @@ const HomeShopItems = () => {
                         </Tab>
 
                     </TabList>
+                    {
+                        shopItems.length < 1 ? (<>
+                            <LoadingCards />
 
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="3000"  >
-                            {
-                                shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Honey&Dates">
-                            <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
+                        </>) : (<>
 
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Finest Herb").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/FinestHerb"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
 
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Nut & Seeds").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Nut&Seeds">
-                            <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="3000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Honey&Dates">
+                                    <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Finest Herb").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/FinestHerb"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Nut & Seeds").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Nut&Seeds">
+                                    <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Pickles & Spices").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Pickles&Spices">
+                                    <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Noboshokti").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Noboshokti"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Organic Oil & Ghee").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/OrganicOil&Ghee"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Gift Combo").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
 
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Pickles & Spices").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Pickles&Spices">
-                            <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Noboshokti").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Noboshokti"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Organic Oil & Ghee").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/OrganicOil&Ghee"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Gift Combo").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/GiftCombo"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Energy Essentials").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/EnergyEssentials"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems'>
-                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
-                            {
-                                shopItems.filter(category => category.category === "Hair & Skin Care").slice(0, 8).map((shopItem) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Hair&SkinCare"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
-                    <TabPanel className='homeTabItems' >
-                        <div className='row' data-aos="fade-in"
-                            data-aos-duration="1000">
-                            {
-                                shopItems.map(shopItem => ({ shopItem, sort: Math.random() })).sort((a, b) => a.sort - b.sort).slice(0, 8).map(({ shopItem }) =>
-                                    <HomeShopItem key={shopItem.id} shopItem={shopItem} />
-                                )
-                            }
-                        </div>
-                        <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
-                        </Link>
-                    </TabPanel>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/GiftCombo"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Energy Essentials").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/EnergyEssentials"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems'>
+                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="1000"  >
+                                    {
+                                        shopItems.filter(category => category.category === "Hair & Skin Care").slice(0, 8).map((shopItem) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Hair&SkinCare"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                            <TabPanel className='homeTabItems' >
+                                <div className='row' data-aos="fade-in"
+                                    data-aos-duration="1000">
+                                    {
+                                        shopItems.map(shopItem => ({ shopItem, sort: Math.random() })).sort((a, b) => a.sort - b.sort).slice(0, 8).map(({ shopItem }) =>
+                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                        )
+                                    }
+                                </div>
+                                <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products"><CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
+                                </Link>
+                            </TabPanel>
+                        </>)
+                    }
                 </Tabs>
             </center>
 

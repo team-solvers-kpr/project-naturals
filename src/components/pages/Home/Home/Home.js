@@ -5,7 +5,8 @@ import HomeShopItems from "../HomeShopItems/HomeShopItems/HomeShopItems";
 import Reviews from "../Reviews/Reviews/Reviews";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts, selectStatus } from "../../../../redux/productSlice";
+import { fetchProducts, selectStatus } from "../../../../redux/allNaturalProductSlice";
+
 
 const Home = () => {
 

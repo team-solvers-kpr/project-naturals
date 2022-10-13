@@ -18,8 +18,9 @@ import noImg from "./../../../assests/nav/no-img.png";
 import loadingGif from "../../../assests/loading/2.gif";
 import { toast } from 'react-toastify';
 
+
 const Navbar = () => {
-    const { user, loading, logOut } = useAuth()
+    const { user, loading, logOut } = useAuth();
     const cart = useSelector(selectCart);
     const cartItems = useSelector(selectTotalItems);
     const totalAmount = useSelector(selectTotalAmount);

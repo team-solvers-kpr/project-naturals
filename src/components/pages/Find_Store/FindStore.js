@@ -9,7 +9,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const FindStore = () => {
     const [allData, setAllData] = useState([]);
     useEffect(() => {
-        fetch('StoreData.json')
+        fetch('http://localhost:5000/storeData')
             .then(res => res.json())
             .then(data => setAllData(data))
     }, [])

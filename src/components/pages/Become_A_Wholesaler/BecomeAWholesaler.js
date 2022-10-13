@@ -1,13 +1,15 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import CustomButton from '../../shared/CustomButton/CustomButton';
 import './BecomeAWholesale.css';
 
 const Become_A_Wholesaler = () => {
 
     const handleSubmit = e => {
-
+        e.preventDefault()
+        toast.success("আপনার তথ্য আমাদের ডেটাবেইজে সংগ্রহণ করা হয়েছে, খুব শীঘ্রই আমাদের টিম আপনার সাথে যোগাযোগ করবে!")
     }
 
     return (

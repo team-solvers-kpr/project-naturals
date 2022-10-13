@@ -8,6 +8,7 @@ import tabIcon4 from '../../../../../assests/pearl/tabicon-4.png';
 import tabIcon5 from '../../../../../assests/pearl/tabicon-5.png';
 import CustomButton from '../../../../shared/CustomButton/CustomButton';
 import './PearlItemsTab.css'
+import LoadingCards from '../../../../shared/LoadingCards/LoadingCards';
 
 const PearlItemsTab = () => {
 
@@ -47,54 +48,64 @@ const PearlItemsTab = () => {
 
                 </TabList>
 
-                <TabPanel className='container' >
-                    <div className='row' data-aos="fade-in"
-                        data-aos-duration="1000">
-                        {
-                            pearlItems.filter(category => category.category === "haircare").slice(0, 8).map((pearlItem) =>
-                                <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
-                            )
-                        }
-                    </div>
-                </TabPanel>
+                {
+                    pearlItems.length < 1 ? (<>
+                        <LoadingCards />
 
-                <TabPanel className='container'>
-                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
-                        {
-                            pearlItems.filter(category => category.category === "skincare").slice(0, 8).map((pearlItem) =>
-                                <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
-                            )
-                        }
-                    </div>
-                </TabPanel>
+                    </>) : (<>
 
-                <TabPanel className='container'>
-                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
-                        {
-                            pearlItems.filter(category => category.category === "bodycare").slice(0, 8).map((pearlItem) =>
-                                <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
-                            )
-                        }
-                    </div>
-                </TabPanel>
-                <TabPanel className='container'>
-                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
-                        {
-                            pearlItems.filter(category => category.category === "soap").slice(0, 8).map((pearlItem) =>
-                                <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
-                            )
-                        }
-                    </div>
-                </TabPanel>
-                <TabPanel className='container'>
-                    <div className='row' data-aos="fade-in" data-aos-duration="1000">
-                        {
-                            pearlItems.filter(category => category.category === "combo").slice(0, 8).map((pearlItem) =>
-                                <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
-                            )
-                        }
-                    </div>
-                </TabPanel>
+                        <TabPanel className='container' >
+                            <div className='row' data-aos="fade-in"
+                                data-aos-duration="1000">
+                                {
+                                    pearlItems.filter(category => category.category === "haircare").slice(0, 8).map((pearlItem) =>
+                                        <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
+                                    )
+                                }
+                            </div>
+                        </TabPanel>
+
+                        <TabPanel className='container'>
+                            <div className='row' data-aos="fade-in" data-aos-duration="1000">
+                                {
+                                    pearlItems.filter(category => category.category === "skincare").slice(0, 8).map((pearlItem) =>
+                                        <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
+                                    )
+                                }
+                            </div>
+                        </TabPanel>
+
+                        <TabPanel className='container'>
+                            <div className='row' data-aos="fade-in" data-aos-duration="1000">
+                                {
+                                    pearlItems.filter(category => category.category === "bodycare").slice(0, 8).map((pearlItem) =>
+                                        <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
+                                    )
+                                }
+                            </div>
+                        </TabPanel>
+                        <TabPanel className='container'>
+                            <div className='row' data-aos="fade-in" data-aos-duration="1000">
+                                {
+                                    pearlItems.filter(category => category.category === "soap").slice(0, 8).map((pearlItem) =>
+                                        <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
+                                    )
+                                }
+                            </div>
+                        </TabPanel>
+                        <TabPanel className='container'>
+                            <div className='row' data-aos="fade-in" data-aos-duration="1000">
+                                {
+                                    pearlItems.filter(category => category.category === "combo").slice(0, 8).map((pearlItem) =>
+                                        <PearlTabItem key={pearlItem.id} pearlItem={pearlItem} />
+                                    )
+                                }
+                            </div>
+                        </TabPanel>
+                    </>)
+
+
+                }
             </Tabs>
             <CustomButton title="VIEW ALL" color="#ffffff" border="2px solid #00a651" backgroundColor="#00a651" />
         </center>
