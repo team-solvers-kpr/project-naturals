@@ -16,7 +16,7 @@ const FindStore = () => {
 
     const columns = [
         {
-            dataField: 'id',
+            dataField: 'serial',
             text: 'SL NO',
         },
         {
@@ -46,8 +46,8 @@ const FindStore = () => {
                 <title>Store Location: Naturals</title>
             </Helmet>
             <ToolkitProvider
-                keyField="id"
-                data={allData}
+                keyField="_id"
+                data={allData.sort((a, b) => a.serial - b.serial)}
                 columns={columns}
                 search
             >
