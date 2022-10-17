@@ -14,7 +14,7 @@ const PearlItemsTab = () => {
 
     const [pearlItems, setPearlItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/pearlProducts')
+        fetch('https://project-naturals-backend.onrender.com/pearlProducts')
             .then(res => res.json())
             .then(data => setPearlItems
                 (data))

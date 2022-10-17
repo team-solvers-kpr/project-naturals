@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    const response = await fetch("http://localhost:5000/allNaturalProducts")
+    const response = await fetch("https://project-naturals-backend.onrender.com/allNaturalsProducts")
     return response.json()
 })
 
