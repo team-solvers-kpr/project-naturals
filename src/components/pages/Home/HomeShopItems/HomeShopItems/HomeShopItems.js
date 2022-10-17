@@ -44,6 +44,7 @@ const HomeShopItems = () => {
                             <br />
                             <span> Honey & Dates </span>
                         </Tab>
+
                         <Tab className='homeTab'>
                             <img src={icon2}
                                 alt=""
@@ -117,13 +118,20 @@ const HomeShopItems = () => {
 
 
                             <TabPanel className='homeTabItems'>
-                                <div className='row mb-3' data-aos="fade-in" data-aos-duration="3000"  >
-                                    {
-                                        shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
-                                            <HomeShopItem key={shopItem._id} shopItem={shopItem} />
-                                        )
-                                    }
-                                </div>
+                                {
+                                    shopItems.length < 1 ? (<>
+                                        <LoadingCards />
+
+                                    </>) : (<>
+
+                                        <div className='row mb-3' data-aos="fade-in" data-aos-duration="3000"  >
+                                            {
+                                                shopItems.filter(category => category.category === "Honey & Dates").slice(0, 8).map((shopItem) =>
+                                                    <HomeShopItem key={shopItem._id} shopItem={shopItem} />
+                                                )
+                                            }
+                                        </div>
+                                    </>)}
                                 <Link style={{ textDecoration: "none", display: 'inline-block' }} to="/products/Honey&Dates">
                                     <CustomButton title="VIEW ALL" color="#ffffff" backgroundColor="#00a651" border="2px solid #00a651" />
                                 </Link>
