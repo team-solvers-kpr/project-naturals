@@ -19,7 +19,7 @@ import LoadingCards from '../../../../shared/LoadingCards/LoadingCards';
 const HomeShopItems = () => {
     const [shopItems, setShopItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allNaturalProducts')
+        fetch('https://project-naturals-backend.onrender.com/allNaturalsProducts')
             .then(res => res.json())
             .then(data => setShopItems(data))
     }, [])
