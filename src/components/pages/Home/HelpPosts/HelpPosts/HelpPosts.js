@@ -19,7 +19,7 @@ const HelpPosts = () => {
         fetch('HelpPost.json')
             .then(res => res.json())
             .then(data => setPosts(data))
-    })
+    }, [])
 
     return (
         <>

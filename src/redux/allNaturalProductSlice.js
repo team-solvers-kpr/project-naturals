@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    const response = await fetch("https://ancient-oasis-14511.herokuapp.com/testing")
+    const response = await fetch("https://project-naturals-backend.onrender.com/allNaturalsProducts")
     return response.json()
 })
 

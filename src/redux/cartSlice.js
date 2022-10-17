@@ -10,10 +10,10 @@ export const cartSlice = createSlice({
             const { payload } = action;
             const { cartProduct } = payload;
 
-            const isItemInCart = state.find((item) => item.id === cartProduct.id)
+            const isItemInCart = state.find((item) => item._id === cartProduct._id)
 
             if (isItemInCart) {
-                return state.map(item => item.id === cartProduct.id ? { ...item, ...cartProduct } : item)
+                return state.map(item => item._id === cartProduct._id ? { ...item, ...cartProduct } : item)
             }
             else {
                 return [...state, { ...cartProduct }]
@@ -21,7 +21,7 @@ export const cartSlice = createSlice({
         },
         deleteFromCart: (state, action) => {
             const { payload } = action
-            return state.filter((item) => item.id !== payload.id)
+            return state.filter((item) => item._id !== payload._id)
         },
         reset: () => initialState
 
