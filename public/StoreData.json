@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "serial": "1",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -8,7 +8,7 @@
         "action": ":"
     },
     {
-        "id": "2",
+        "serial": "2",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Top one pharmacy",
@@ -16,7 +16,7 @@
         "action": ":"
     },
     {
-        "id": "3",
+        "serial": "3",
         "city": "Dhaka",
         "area": "Moddo badda",
         "storeName": "Ashik pharma and departmental store",
@@ -24,7 +24,7 @@
         "action": ":"
     },
     {
-        "id": "4",
+        "serial": "4",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Health care pharma",
@@ -32,7 +32,7 @@
         "action": ":"
     },
     {
-        "id": "5",
+        "serial": "5",
         "city": "Dhaka",
         "area": "Vatara",
         "storeName": "Mawlana drag house",
@@ -40,7 +40,7 @@
         "action": ":"
     },
     {
-        "id": "6",
+        "serial": "6",
         "city": "Dhaka",
         "area": "Bashundhara",
         "storeName": "Taz pharma",
@@ -48,7 +48,7 @@
         "action": ":"
     },
     {
-        "id": "7",
+        "serial": "7",
         "city": "Dhaka",
         "area": "Dhanmondi",
         "storeName": "Amar pharma ltd",
@@ -56,7 +56,7 @@
         "action": ":"
     },
     {
-        "id": "8",
+        "serial": "8",
         "city": "Dhaka",
         "area": "Dhanmondi",
         "storeName": "Konna Super Shop",
@@ -64,7 +64,7 @@
         "action": ":"
     },
     {
-        "id": "9",
+        "serial": "9",
         "city": "Dhaka",
         "area": "Manik Nagar",
         "storeName": "Poshari",
@@ -72,7 +72,7 @@
         "action": ":"
     },
     {
-        "id": "10",
+        "serial": "10",
         "city": "Dhaka",
         "area": "Mohammadpur ",
         "storeName": "Al shefa pharmacy Ltd",
@@ -80,7 +80,7 @@
         "action": ":"
     },
     {
-        "id": "12",
+        "serial": "12",
         "city": "Dhaka",
         "area": "Mohammadpur ",
         "storeName": "Al shefa pharmacy 2",
@@ -88,7 +88,7 @@
         "action": ":"
     },
     {
-        "id": "13",
+        "serial": "13",
         "city": "Dhaka",
         "area": "Mohammadpur",
         "storeName": "Al shefa pharmacy 3",
@@ -96,7 +96,7 @@
         "action": ":"
     },
     {
-        "id": "14",
+        "serial": "14",
         "city": "Dhaka",
         "area": "Mohammadpur",
         "storeName": "Al shefa pharmacy 4",
@@ -104,7 +104,7 @@
         "action": ":"
     },
     {
-        "id": "15",
+        "serial": "15",
         "city": "Dhaka",
         "area": "Rampura ",
         "storeName": "Health care pharma",
@@ -112,7 +112,7 @@
         "action": ":"
     },
     {
-        "id": "16",
+        "serial": "16",
         "city": "Dhaka",
         "area": "Rayerbag ",
         "storeName": "Amina pharma",
@@ -120,7 +120,7 @@
         "action": ":"
     },
     {
-        "id": "17",
+        "serial": "17",
         "city": "Dhaka",
         "area": "Uttara",
         "storeName": "Inoviz Pharnacy",
@@ -128,7 +128,7 @@
         "action": ":"
     },
     {
-        "id": "18",
+        "serial": "18",
         "city": "Dhaka",
         "area": "Uttara",
         "storeName": "Green shed Super shop",
@@ -136,7 +136,7 @@
         "action": ":"
     },
     {
-        "id": "19",
+        "serial": "19",
         "city": "Dhaka",
         "area": "Uttara ",
         "storeName": "Gayo hat organic shop",
@@ -144,7 +144,7 @@
         "action": ":"
     },
     {
-        "id": "20",
+        "serial": "20",
         "city": "Barishal ",
         "area": "Charfashion",
         "storeName": "Nur cap house",
@@ -152,7 +152,7 @@
         "action": ":"
     },
     {
-        "id": "21",
+        "serial": "21",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -160,7 +160,7 @@
         "action": ":"
     },
     {
-        "id": "22",
+        "serial": "22",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -168,7 +168,7 @@
         "action": ":"
     },
     {
-        "id": "23",
+        "serial": "23",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -176,7 +176,7 @@
         "action": ":"
     },
     {
-        "id": "24",
+        "serial": "24",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -184,7 +184,7 @@
         "action": ":"
     },
     {
-        "id": "25",
+        "serial": "25",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -192,7 +192,7 @@
         "action": ":"
     },
     {
-        "id": "26",
+        "serial": "26",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -200,7 +200,7 @@
         "action": ":"
     },
     {
-        "id": "27",
+        "serial": "27",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -208,7 +208,7 @@
         "action": ":"
     },
     {
-        "id": "28",
+        "serial": "28",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -216,7 +216,7 @@
         "action": ":"
     },
     {
-        "id": "29",
+        "serial": "29",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -224,7 +224,7 @@
         "action": ":"
     },
     {
-        "id": "30",
+        "serial": "30",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -232,7 +232,7 @@
         "action": ":"
     },
     {
-        "id": "31",
+        "serial": "31",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -240,7 +240,7 @@
         "action": ":"
     },
     {
-        "id": "32",
+        "serial": "32",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -248,7 +248,7 @@
         "action": ":"
     },
     {
-        "id": "33",
+        "serial": "33",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -256,7 +256,7 @@
         "action": ":"
     },
     {
-        "id": "34",
+        "serial": "34",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",
@@ -264,7 +264,7 @@
         "action": ":"
     },
     {
-        "id": "35",
+        "serial": "35",
         "city": "Dhaka",
         "area": "Merul Badda",
         "storeName": "Green life Pharmacy",

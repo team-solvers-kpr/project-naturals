@@ -9,14 +9,14 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const FindStore = () => {
     const [allData, setAllData] = useState([]);
     useEffect(() => {
-        fetch('storeData.json')
+        fetch('http://localhost:5000/storeData')
             .then(res => res.json())
             .then(data => setAllData(data))
     }, [])
 
     const columns = [
         {
-            dataField: 'id',
+            dataField: 'serial',
             text: 'SL NO',
         },
         {
@@ -46,8 +46,8 @@ const FindStore = () => {
                 <title>Store Location: Naturals</title>
             </Helmet>
             <ToolkitProvider
-                keyField="id"
-                data={allData}
+                keyField="_id"
+                data={allData.sort((a, b) => a.serial - b.serial)}
                 columns={columns}
                 search
             >

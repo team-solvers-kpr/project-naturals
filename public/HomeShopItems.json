@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "img1": "./assets/images/homeShopItems/1.png",
-        "img2": "./assets/images/homeShopItems/2.png",
+        "img1": "https://i.ibb.co/Hz5WB64/1.png",
+        "img2": "https://i.ibb.co/Zzk9LbQ/2.jpg",
         "itemName": "ন্যাচারালস কালোজিরা ফুলের মধু (Blackseed Flower Honey)",
         "quantity": "৫০০গ্রাম",
         "rating": 5,
@@ -13,8 +13,8 @@
     },
     {
         "id": 2,
-        "img1": "./assets/images/homeShopItems/3.png",
-        "img2": "./assets/images/homeShopItems/4.png",
+        "img1": "https://i.ibb.co/W0N0T4p/3.png",
+        "img2": "https://i.ibb.co/LxDYQ51/4.jpg",
         "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
         "quantity": "৫০০গ্রাম",
         "rating": 4,
@@ -23,22 +23,10 @@
         "price": 1020,
         "discount": 50
     },
-    {
+     {
         "id": 3,
-        "img1": "./assets/images/homeShopItems/3.png",
-        "img2": "./assets/images/homeShopItems/4.png",
-        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
-        "quantity": "২৫০গ্রাম",
-        "rating": 5,
-        "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
-        "category": "Honey & Dates",
-        "price": 335,
-        "discount": 0
-    },
-    {
-        "id": 4,
-        "img1": "./assets/images/homeShopItems/5.png",
-        "img2": "./assets/images/homeShopItems/6.png",
+        "img1": "https://i.ibb.co/TwrrywF/5.png",
+        "img2": "https://i.ibb.co/tHSqMYk/6.jpg",
         "itemName": "ন্যাচারালস গ্রামের চাকের মধু (Rural Honeycomb Honey)",
         "quantity": "৫০০গ্রাম",
         "rating": 3,
@@ -48,9 +36,22 @@
         "discount": 0
     },
     {
+        "id": 4,
+        "img1": "https://i.ibb.co/HTPzgQP/86.jpg",
+        "img2": "https://i.ibb.co/Q6Q6nTf/87.jpg",
+        "itemName": "ন্যাচারালস মিশ্র ফুলের মধু (Mixed Flower Honey)",
+        "quantity": "২৫০গ্রাম",
+        "rating": 5,
+        "desc": "Made of a natural mix of pollen from the various plants by the bees themselves, Naturals Premium Mixed Flower Honey contains plant hormones, essential oils, aromatic substances with high nutritional value. It is recommended as a healthy diet for adults and growing children, and for the oral cavity to treat cough, for its soothing decongestant propertie",
+        "category": "Honey & Dates",
+        "price": 335,
+        "discount": 0
+    },
+   
+    {
         "id": 5,
-        "img1": "./assets/images/homeShopItems/7.png",
-        "img2": "./assets/images/homeShopItems/8.png",
+        "img1": "https://i.ibb.co/wSwRccn/7.jpg",
+        "img2": "https://i.ibb.co/4gW64zp/8.jpg",
         "itemName": "ন্যাচারালস সরিষা ফুলের মধু (Mustard Flower Honey)",
         "quantity": "২৫০গ্রাম",
         "rating": 4,
@@ -61,8 +62,8 @@
     },
     {
         "id": 6,
-        "img1": "./assets/images/homeShopItems/9.png",
-        "img2": "./assets/images/homeShopItems/10.png",
+        "img1": "https://i.ibb.co/TmVZWPr/9.png",
+        "img2": "https://i.ibb.co/c6p5LFm/10.jpg",
         "itemName": "ন্যাচারালস লিচু ফুলের মধু (Litchi Flower Honey)",
         "quantity": "৫০০গ্রাম",
         "rating": 4.5,
@@ -73,8 +74,8 @@
     },
     {
         "id": 7,
-        "img1": "./assets/images/homeShopItems/11.png",
-        "img2": "./assets/images/homeShopItems/12.png",
+        "img1": "https://i.ibb.co/vQDcdq7/11.png",
+        "img2": "https://i.ibb.co/6RrrWQL/12.jpg",
         "itemName": "ন্যাচারালস সরিষা ফুলের মধু (Mustard Flower Honey)",
         "quantity": "৫০০গ্রাম",
         "rating": 4,
@@ -85,19 +86,7 @@
     },
     {
         "id": 8,
-        "img1": "./assets/images/homeShopItems/13.png",
-        "img2": "",
-        "itemName": "ন্যাচারালস আজওয়া খেজুর (Ajwa Khejur)",
-        "quantity": "৫০০গ্রাম",
-        "rating": 5,
-        "desc": "",
-        "category": "Honey & Dates",
-        "price": 845,
-        "discount": 0
-    },
-    {
-        "id": 9,
-        "img1": "./assets/images/homeShopItems/13.png",
+        "img1": "https://i.ibb.co/MC4Nf30/13.png",
         "img2": "",
         "itemName": "ন্যাচারালস আজওয়া খেজুর (Ajwa Khejur)",
         "quantity": "৫০০গ্রাম",
@@ -109,8 +98,8 @@
     },
     {
         "id": 10,
-        "img1": "./assets/images/homeShopItems/14.png",
-        "img2": "./assets/images/homeShopItems/15.png",
+        "img1": "https://i.ibb.co/VvCfDMs/14.png",
+        "img2": "https://i.ibb.co/WvLgyvM/15.jpg",
         "itemName": "ন্যাচারালস অশ্বগন্ধা পাউডার (Aushwagondha Powder)",
         "quantity": "১০০গ্রাম",
         "rating": 5,
@@ -121,8 +110,8 @@
     },
     {
         "id": 11,
-        "img1": "./assets/images/homeShopItems/16.png",
-        "img2": "./assets/images/homeShopItems/17.png",
+        "img1": "https://i.ibb.co/qNND3Hz/16.png",
+        "img2": "https://i.ibb.co/2ywkVQk/17.jpg",
         "itemName": "ন্যাচারালস ত্রিফলা চূর্ন (Triphola Powder)",
         "quantity": "১০০গ্রাম",
         "rating": 5,
@@ -133,8 +122,8 @@
     },
     {
         "id": 12,
-        "img1": "./assets/images/homeShopItems/18.png",
-        "img2": "./assets/images/homeShopItems/19.png",
+        "img1": "https://i.ibb.co/cbKVsjw/18.png",
+        "img2": "https://i.ibb.co/QpK1szZ/19.jpg",
         "itemName": "ন্যাচারালস মরিঙ্গা সুপার ফুড (Moringa)",
         "quantity": "৯০গ্রাম",
         "rating": 3.5,
@@ -145,7 +134,7 @@
     },
     {
         "id": 13,
-        "img1": "./assets/images/homeShopItems/20.png",
+        "img1": "https://i.ibb.co/sHZK2Z0/20.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস ডায়বেটিস কেয়ার প্যাক (Diabetes Care Pack)",
         "quantity": "",
@@ -157,8 +146,8 @@
     },
     {
         "id": 14,
-        "img1": "./assets/images/homeShopItems/21.png",
-        "img2": "./assets/images/homeShopItems/22.png",
+        "img1": "https://i.ibb.co/Qj6p5FZ/21.png",
+        "img2": "https://i.ibb.co/bJKTZrY/22.jpg",
         "itemName": "ন্যাচারালস জাম বীজ গুড়া (Jam Beez Powder)",
         "quantity": "১২০ গ্রাম",
         "rating": 3.5,
@@ -169,8 +158,8 @@
     },
     {
         "id": 15,
-        "img1": "./assets/images/homeShopItems/23.png",
-        "img2": "./assets/images/homeShopItems/24.png",
+        "img1": "https://i.ibb.co/GFjZ50q/23.png",
+        "img2": "https://i.ibb.co/vkt1yZB/24.jpg",
         "itemName": "ন্যাচারালস সোনাপাতা গুড়া (Sonapata Powder)",
         "quantity": "৯০ গ্রাম",
         "rating": 4.5,
@@ -181,8 +170,8 @@
     },
     {
         "id": 16,
-        "img1": "./assets/images/homeShopItems/25.png",
-        "img2": "./assets/images/homeShopItems/26.png",
+        "img1": "https://i.ibb.co/Nn29yXJ/25.png",
+        "img2": "https://i.ibb.co/z6hSCv6/26.jpg",
         "itemName": "ন্যাচারালস আমলকি গুড়া (Amloki Powder)",
         "quantity": "১০০ গ্রাম",
         "rating": 2.5,
@@ -193,8 +182,8 @@
     },
     {
         "id": 17,
-        "img1": "./assets/images/homeShopItems/27.png",
-        "img2": "./assets/images/homeShopItems/28.png",
+        "img1": "https://i.ibb.co/JFPv3m1/27.png",
+        "img2": "https://i.ibb.co/nRHVQwP/28.jpg",
         "itemName": "ন্যাচারালস অর্জুন গুড়া (Arjun Powder)",
         "quantity": "১০০ গ্রাম",
         "rating": 4,
@@ -205,7 +194,7 @@
     },
     {
         "id": 18,
-        "img1": "./assets/images/homeShopItems/29.png",
+        "img1": "https://i.ibb.co/9gsXWmq/29.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস মিক্সড নাট (Mixed nut)",
         "quantity": "২০০ গ্রাম",
@@ -217,8 +206,8 @@
     },
     {
         "id": 19,
-        "img1": "./assets/images/homeShopItems/30.png",
-        "img2": "./assets/images/homeShopItems/31.png",
+        "img1": "https://i.ibb.co/48T5kTr/30.png",
+        "img2": "https://i.ibb.co/tbkt8f2/31.jpg",
         "itemName": "ন্যাচারালস চিয়া সীড (Chiya Seed)",
         "quantity": "২০০ গ্রাম",
         "rating": 5,
@@ -229,7 +218,7 @@
     },
     {
         "id": 20,
-        "img1": "./assets/images/homeShopItems/32.png",
+        "img1": "https://i.ibb.co/rwvR7kX/32.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস প্রিমিয়াম রোস্টেড কাজু (Cashew)",
         "quantity": "২০০ গ্রাম",
@@ -241,7 +230,7 @@
     },
     {
         "id": 21,
-        "img1": "./assets/images/homeShopItems/33.png",
+        "img1": "https://i.ibb.co/s2nB34S/33.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস প্রিমিয়াম রোস্টেড কাঠ বাদাম (Almond)",
         "quantity": "২০০ গ্রাম",
@@ -253,7 +242,7 @@
     },
     {
         "id": 22,
-        "img1": "./assets/images/homeShopItems/34.png",
+        "img1": "https://i.ibb.co/hW7fTmK/34.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস প্রিমিয়াম রোস্টেড পিনাট (Peanut)",
         "quantity": "২০০ গ্রাম",
@@ -265,7 +254,7 @@
     },
     {
         "id": 23,
-        "img1": "./assets/images/homeShopItems/35.png",
+        "img1": "https://i.ibb.co/hfjGPvb/35.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস প্রিমিয়াম রোস্টেড পেস্তা (Pistachio)",
         "quantity": "১৭৫ গ্রাম",
@@ -277,8 +266,8 @@
     },
     {
         "id": 24,
-        "img1": "./assets/images/homeShopItems/36.png",
-        "img2": "./assets/images/homeShopItems/37.png",
+        "img1": "https://i.ibb.co/J3x8ctb/36.png",
+        "img2": "https://i.ibb.co/vkqMWj8/37.jpg",
         "itemName": "ন্যাচারালস তোকমা দানা (Tokma Dana)",
         "quantity": "১২০ গ্রাম",
         "rating": 4.5,
@@ -289,8 +278,8 @@
     },
     {
         "id": 25,
-        "img1": "./assets/images/homeShopItems/38.png",
-        "img2": "./assets/images/homeShopItems/39.png",
+        "img1": "https://i.ibb.co/cwYFCG2/38.jpg",
+        "img2": "https://i.ibb.co/7RtGpp9/39.jpg",
         "itemName": "ন্যাচারালস পামকিন সিড (Pumpkin Seed)",
         "quantity": "১২০ গ্রাম",
         "rating": 3.5,
@@ -301,8 +290,8 @@
     },
     {
         "id": 26,
-        "img1": "./assets/images/homeShopItems/40.png",
-        "img2": "./assets/images/homeShopItems/41.png",
+        "img1": "https://i.ibb.co/C5Wjjhb/40.png",
+        "img2": "https://i.ibb.co/NV9twVQ/41.jpg",
         "itemName": "ন্যাচারালস আদাগুড়া (Ada Gura)",
         "quantity": "১০০ গ্রাম",
         "rating": 4.5,
@@ -313,7 +302,7 @@
     },
     {
         "id": 27,
-        "img1": "./assets/images/homeShopItems/42.png",
+        "img1": "https://i.ibb.co/DkwKYXs/42.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস রসুনের আচার (Garlic Pickle)",
         "quantity": "১০০ গ্রাম",
@@ -325,7 +314,7 @@
     },
     {
         "id": 28,
-        "img1": "./assets/images/homeShopItems/43.png",
+        "img1": "https://i.ibb.co/7yB2rtL/43.png",
         "img2": "",
         "itemName": "ন্যাচারালস দারুচিনি গুড়া (Darucini)",
         "quantity": "১০০ গ্রাম",
@@ -337,7 +326,7 @@
     },
     {
         "id": 29,
-        "img1": "./assets/images/homeShopItems/44.png",
+        "img1": "https://i.ibb.co/6nV4qZY/44.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস মিক্সড আচার (Mixed Pickle)",
         "quantity": "৪০০ গ্রাম",
@@ -349,7 +338,7 @@
     },
     {
         "id": 30,
-        "img1": "./assets/images/homeShopItems/45.png",
+        "img1": "https://i.ibb.co/b2589cq/45.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস সাতকরা আচার (Satkora Pickle)",
         "quantity": "৪০০ গ্রাম",
@@ -361,9 +350,9 @@
     },
     {
         "id": 31,
-        "img1": "./assets/images/homeShopItems/46.png",
+        "img1": "https://i.ibb.co/cxWwgW9/46.jpg",
         "img2": "",
-        "itemName": "ন্যাচারালস সাতকরা আচার (Satkora Pickle)",
+        "itemName": "ন্যাচারালস নাগা মরিচের আচার (Naga Chili Pickle)",
         "quantity": "৪০০ গ্রাম",
         "rating": 5,
         "desc": "",
@@ -373,7 +362,7 @@
     },
     {
         "id": 32,
-        "img1": "./assets/images/homeShopItems/47.png",
+        "img1": "https://i.ibb.co/sVh16mP/47.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস আমের আচার (Mango Pickle)",
         "quantity": "৪০০ গ্রাম",
@@ -385,7 +374,7 @@
     },
     {
         "id": 33,
-        "img1": "./assets/images/homeShopItems/48.png",
+        "img1": "https://i.ibb.co/BKt6B7F/48.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস জলপাই আচার (Olive Pickle)",
         "quantity": "৪০০ গ্রাম",
@@ -397,7 +386,7 @@
     },
     {
         "id": 34,
-        "img1": "./assets/images/homeShopItems/49.png",
+        "img1": "https://i.ibb.co/3kqzgKR/49.jpg",
         "img2": "",
         "itemName": "নবশক্তি ম্যানস (Noboshokti Mens)",
         "quantity": "১০০ গ্রাম",
@@ -409,7 +398,7 @@
     },
     {
         "id": 35,
-        "img1": "./assets/images/homeShopItems/50.png",
+        "img1": "https://i.ibb.co/C6MpP7J/50.jpg",
         "img2": "",
         "itemName": "নবশক্তি ম্যানস (Noboshokti Mens)",
         "quantity": "১০০ গ্রামx২পিস+লিচু ফুলের মধু ",
@@ -421,7 +410,7 @@
     },
     {
         "id": 36,
-        "img1": "./assets/images/homeShopItems/51.png",
+        "img1": "https://i.ibb.co/vVWWhHr/51.jpg",
         "img2": "",
         "itemName": "নবশক্তি ম্যানস হাফ কোর্স (Noboshokti Mens Half Course)",
         "quantity": "১০০ গ্রাম x ৩ পিস",
@@ -433,7 +422,7 @@
     },
     {
         "id": 37,
-        "img1": "./assets/images/homeShopItems/52.png",
+        "img1": "https://i.ibb.co/XDbF53F/52.jpg",
         "img2": "",
         "itemName": "নবশক্তি ম্যানস ফুল কোর্স (Noboshokti Mens Full Course)",
         "quantity": "১০০ গ্রাম x ৬ পিস",
@@ -445,7 +434,7 @@
     },
     {
         "id": 38,
-        "img1": "./assets/images/homeShopItems/53.png",
+        "img1": "https://i.ibb.co/vwk16BP/88.jpg",
         "img2": "",
         "itemName": "নবশক্তি ম্যানস (Noboshokti Mens)",
         "quantity": "১৭৫গ্রাম",
@@ -457,7 +446,7 @@
     },
     {
         "id": 39,
-        "img1": "./assets/images/homeShopItems/54.png",
+        "img1": "https://i.ibb.co/g9K7BRG/54.jpg",
         "img2": "",
         "itemName": "নবশক্তি ওমেন (Noboshokti Women)",
         "quantity": "১০০ গ্রাম",
@@ -469,7 +458,7 @@
     },
     {
         "id": 40,
-        "img1": "./assets/images/homeShopItems/55.png",
+        "img1": "https://i.ibb.co/XDMPL89/55.jpg",
         "img2": "",
         "itemName": "নবশক্তি ওমেন (Noboshokti Women)",
         "quantity": "১৭৫ গ্রাম",
@@ -481,8 +470,8 @@
     },
     {
         "id": 41,
-        "img1": "./assets/images/homeShopItems/56.png",
-        "img2": "./assets/images/homeShopItems/57.png",
+        "img1": "https://i.ibb.co/d6CwMbM/56.png",
+        "img2": "https://i.ibb.co/Wkzxfhy/57.jpg",
         "itemName": "ঘানিভাঙ্গা সরিষার তেল (Mustard Oil)",
         "quantity": "১ লিটার",
         "rating": 4.5,
@@ -493,8 +482,8 @@
     },
     {
         "id": 42,
-        "img1": "./assets/images/homeShopItems/58.png",
-        "img2": "./assets/images/homeShopItems/59.png",
+        "img1": "https://i.ibb.co/ysx2VqH/58.png",
+        "img2": "https://i.ibb.co/cXvGHzT/59.jpg",
         "itemName": "ঘানিভাঙ্গা সরিষার তেল (Mustard Oil)",
         "quantity": "৫ লিটার",
         "rating": 5,
@@ -505,8 +494,8 @@
     },
     {
         "id": 43,
-        "img1": "./assets/images/homeShopItems/60.png",
-        "img2": "./assets/images/homeShopItems/61.png",
+        "img1": "https://i.ibb.co/JBYkgRn/60.jpg",
+        "img2": "https://i.ibb.co/DV8J6FM/61.jpg",
         "itemName": "ন্যাচারালস প্রিমিয়াম ঘি (Ghee)",
         "quantity": "৩৩০ গ্রাম",
         "rating": 5,
@@ -517,8 +506,8 @@
     },
     {
         "id": 44,
-        "img1": "./assets/images/homeShopItems/62.png",
-        "img2": "./assets/images/homeShopItems/63.png",
+        "img1": "https://i.ibb.co/JrHzxd0/62.jpg",
+        "img2": "https://i.ibb.co/ftQfTJv/63.jpg",
         "itemName": "ন্যাচারালস প্রিমিয়াম ঘি (Ghee)",
         "quantity": "১৭৫ গ্রাম",
         "rating": 5,
@@ -529,8 +518,8 @@
     },
     {
         "id": 45,
-        "img1": "./assets/images/homeShopItems/64.png",
-        "img2": "./assets/images/homeShopItems/65.png",
+        "img1": "https://i.ibb.co/S02ppRP/64.jpg",
+        "img2": "https://i.ibb.co/WpCcnmM/65.jpg",
         "itemName": "ঘানিভাঙ্গা সরিষার তেল (Mustard Oil)",
         "quantity": "৫০০ মি:লি:",
         "rating": 4.5,
@@ -541,7 +530,7 @@
     },
     {
         "id": 46,
-        "img1": "./assets/images/homeShopItems/66.png",
+        "img1": "https://i.ibb.co/1nphFSs/66.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস ওয়েট লস প্যাক (Weight Lose Pack)",
         "quantity": "",
@@ -553,7 +542,7 @@
     },
     {
         "id": 47,
-        "img1": "./assets/images/homeShopItems/67.png",
+        "img1": "https://i.ibb.co/183JYBx/67.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস গ্যাস্ট্রিক নিরাময় প্যাকেজ (Gastric Pack)",
         "quantity": "",
@@ -565,7 +554,7 @@
     },
     {
         "id": 48,
-        "img1": "./assets/images/homeShopItems/68.png",
+        "img1": "https://i.ibb.co/b74wZvJ/68.jpg",
         "img2": "",
         "itemName": "রোস্টেড নাট গোল্ড প্যাকেজ (Nut Gold Pack)",
         "quantity": "",
@@ -577,7 +566,7 @@
     },
     {
         "id": 49,
-        "img1": "./assets/images/homeShopItems/69.png",
+        "img1": "https://i.ibb.co/G2NTNQt/69.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস কমপ্লিট হেলথ কেয়ার কম্বো (Complete Health Care Combo)",
         "quantity": "",
@@ -589,7 +578,7 @@
     },
     {
         "id": 50,
-        "img1": "./assets/images/homeShopItems/70.png",
+        "img1": "https://i.ibb.co/fNtMmhm/70.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস ইমিউনিটি বুস্টার প্যাক (Immunity Booster Pack)",
         "quantity": "",
@@ -601,7 +590,7 @@
     },
     {
         "id": 51,
-        "img1": "./assets/images/homeShopItems/71.png",
+        "img1": "https://i.ibb.co/k6HkpYY/71.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস মাসিক সুস্বাস্থ্য প্যাক (Masik Susastho Pack)",
         "quantity": "",
@@ -613,7 +602,7 @@
     },
     {
         "id": 52,
-        "img1": "./assets/images/homeShopItems/72.png",
+        "img1": "https://i.ibb.co/Rjbtnx6/72.jpg",
         "img2": "",
         "itemName": "রোস্টেড নাট প্লাটিনাম প্যাকেজ (Nut Platinum Pack)",
         "quantity": "",
@@ -625,7 +614,7 @@
     },
     {
         "id": 53,
-        "img1": "./assets/images/homeShopItems/73.png",
+        "img1": "https://i.ibb.co/prvS3mQ/73.jpg",
         "img2": "",
         "itemName": "রোস্টেড নাট সিলভার প্যাকেজ (Nut Silver Pack)",
         "quantity": "",
@@ -637,8 +626,8 @@
     },
     {
         "id": 54,
-        "img1": "./assets/images/homeShopItems/74.png",
-        "img2": "./assets/images/homeShopItems/75.png",
+        "img1": "https://i.ibb.co/QDx1mdv/74.png",
+        "img2": "https://i.ibb.co/RhYNX7Z/75.jpg",
         "itemName": "ন্যাচারালস শিমূল মূল চূর্ণ (Shimul Mul)",
         "quantity": "১০০ গ্রাম",
         "rating": 3,
@@ -649,8 +638,8 @@
     },
     {
         "id": 55,
-        "img1": "./assets/images/homeShopItems/76.png",
-        "img2": "./assets/images/homeShopItems/77.png",
+        "img1": "https://i.ibb.co/MnLKh6n/76.png",
+        "img2": "https://i.ibb.co/qkKRFKg/77.jpg",
         "itemName": "ন্যাচারালস শতমূলী গুড়া (Shotomuli)",
         "quantity": "১০০ গ্রাম",
         "rating": 3,
@@ -661,7 +650,7 @@
     },
     {
         "id": 56,
-        "img1": "./assets/images/homeShopItems/78.png",
+        "img1": "https://i.ibb.co/CvHM7k5/78.jpg",
         "img2": "",
         "itemName": "ন্যাচারালস পাওয়ার বুস্টার প্যাক (Power Booster Pack)",
         "quantity": "",
@@ -673,7 +662,7 @@
     },
     {
         "id": 57,
-        "img1": "./assets/images/homeShopItems/79.png",
+        "img1": "https://i.ibb.co/ZJ8W702/79.png",
         "img2": "",
         "itemName": "ন্যাচারালস আলকুশি পাউডার (Alkushi Powder)",
         "quantity": "১০০ গ্রাম",
@@ -685,8 +674,8 @@
     },
     {
         "id": 58,
-        "img1": "./assets/images/homeShopItems/80.png",
-        "img2": "./assets/images/homeShopItems/81.png",
+        "img1": "https://i.ibb.co/dGxmFhs/80.png",
+        "img2": "https://i.ibb.co/FDDf5ZD/81.jpg",
         "itemName": "ন্যাচারালস মেথি গুড়া (Methi Powder)",
         "quantity": "১০০ গ্রাম",
         "rating": 4,
@@ -697,8 +686,8 @@
     },
     {
         "id": 59,
-        "img1": "./assets/images/homeShopItems/82.png",
-        "img2": "./assets/images/homeShopItems/83.png",
+        "img1": "https://i.ibb.co/fF14QLm/82.png",
+        "img2": "https://i.ibb.co/Qr6J8jK/83.jpg",
         "itemName": "ন্যাচারালস যষ্ঠিমধু গুড়া (Josthimodhu Powder)",
         "quantity": "১০০ গ্রাম",
         "rating": 5,
@@ -709,8 +698,8 @@
     },
     {
         "id": 60,
-        "img1": "./assets/images/homeShopItems/84.png",
-        "img2": "./assets/images/homeShopItems/85.png",
+        "img1": "https://i.ibb.co/rtpWCNL/84.png",
+        "img2": "https://i.ibb.co/Byp2LsS/85.jpg",
         "itemName": "ন্যাচারালস চিরতা পাউডার (Chirota)",
         "quantity": "৯০ গ্রাম",
         "rating": 5,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { selectHoneyAndDates } from '../../../../../redux/productSlice';
+import { selectHoneyAndDates } from '../../../../../redux/allNaturalProductSlice';
 
 
 

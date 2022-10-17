@@ -28,7 +28,7 @@ import { persistStore } from 'redux-persist'
 import store from './redux/store';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react'
-import { ToastContainer } from "react-toastify";
+import { Flip, ToastContainer } from "react-toastify";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -56,7 +56,7 @@ function App() {
       <PersistGate persistor={persistor}>
         <AuthProvider>
           <Wrapper>
-            <ToastContainer position="bottom-right" pauseOnHover />
+            <ToastContainer position="bottom-right" pauseOnHover transition={Flip} />
             <Navbar />
             <Routes>
               {user && user.emailVerified ? (<>
@@ -102,6 +102,7 @@ function App() {
               svgPath="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"
             />
             <Footer />
+
           </Wrapper>
         </AuthProvider>
       </PersistGate>
