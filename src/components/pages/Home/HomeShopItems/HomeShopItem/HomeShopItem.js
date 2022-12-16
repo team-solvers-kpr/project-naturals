@@ -102,7 +102,7 @@ const MyVerticallyCenteredModal = (props) => {
                   <div className="carousel-item active">
                     <img src={props.shopitem.img1} className="w-100" alt="..." />
                   </div>
-                  <div className="carousel-item">
+                  <div className="carousel-item" >
                     <img src={props.shopitem.img2} className="w-100" alt="..." />
                   </div>
                 </div>
